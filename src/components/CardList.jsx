@@ -2,11 +2,13 @@ import React, {useEffect, useState} from 'react';
 import "./CardList.css"
 import * as firebase from "firebase";
 import Card from "./Card";
+import CounterList from "./CounterList";
 
 
 const CardList = () => {
 
     const [characters, setCharacters] = useState();
+    const [counters, setCounters] = useState();
 
 
     const connectToFirebase = async () => {
@@ -23,25 +25,24 @@ const CardList = () => {
         await firebase.initializeApp(firebaseConfig);
     };
 
-    const getCards = async () => {
-        return await connectToFirebase().then(() => {
-            const db = firebase.firestore();
-            return db.collection("characters").get().then(snapshot => {
-                const characters = [];
-                snapshot.forEach(doc => characters.push(doc.data()));
-                console.log(characters);
-                return characters.map(character => React.createElement(Card, character));
-            })
-        });
+    const getCharacters = async () => {
+        const db = firebase.firestore();
+        return await db.collection("characters").get().then(snapshot => {
+            const characters = [];
+            snapshot.forEach(doc => characters.push(doc.data()));
+            return characters.map((character, i) => React.createElement(Card, {key: i, ...character}));
+        })
     };
 
-    useEffect(() => {
-        getCards().then(
-            data => setCharacters(
-                data
-            )
-        )
-    }, []);
+    const getCards = () => {
+        connectToFirebase()
+            .then(() => getCharacters().then(characters => {
+                setCharacters(characters);
+                setCounters({selectedCharacter: characters[0], characters: characters })
+            }));
+    };
+
+    useEffect(() => getCards(), []);
 
     return (
         <div>
@@ -51,6 +52,11 @@ const CardList = () => {
 
             <div id={"cardList"}>
                 {characters}
+
+            </div>
+
+            <div>
+                {counters ? React.createElement(CounterList, counters) : <></>}
             </div>
         </div>
     )

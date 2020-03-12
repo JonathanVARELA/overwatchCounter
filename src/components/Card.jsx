@@ -1,13 +1,13 @@
 import React from 'react';
 import "./Card.css"
 
-const Card = ({avatar, name, type}) => {
+const Card = ({avatar, name, type, sound}) => {
+
+    const audio = new Audio(sound);
 
     return (
-        <div>
-            <img src={avatar} alt={"Avatar image of " + name}/>
-            <span>{name}</span>
-            <span>{type}</span>
+        <div className={"card"}>
+            <img src={avatar} onClick={() => audio.play()} alt={"Avatar image of " + name}/>
         </div>
     )
 };
