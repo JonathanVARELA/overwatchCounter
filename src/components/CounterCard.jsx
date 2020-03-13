@@ -2,32 +2,45 @@ import React, {useEffect, useState} from 'react';
 import "./CounterCard.css"
 import * as firebase from "firebase";
 
-const CounterCard = (selectedCharacterName, currentCounterCharacter) => {
+const CounterCard = ({selectedCharacter, currentCounterCharacter}) => {
+
 
     const [score, setScore] = useState([]);
 
-    const getVotes = async () => {
-        console.log("selected", selectedCharacterName, "current", currentCounterCharacter);
+    const getScore = async () => {
+        console.log("selected", selectedCharacter.name, "current", currentCounterCharacter.name);
         const db = firebase.firestore();
-        const getScore = (snapshot) => snapshot.data() ? snapshot.data().score : 0;
+
+        const getScore = (snapshot) => snapshot
+            .docs
+            .map(snapshot => snapshot.data())
+            .values()
+            .next()
+            .value
+            ?.score || 0;
+
         let score = 0;
 
         await db.collection("counters")
             .where('leftCharacter', "==", currentCounterCharacter.name)
-            .where('rightCharacter', "==", selectedCharacterName)
+            .where('rightCharacter', "==", selectedCharacter.name)
             .get()
-            .then(snapshot => score = getScore(snapshot) * -1);
+            .then(snapshot => score += getScore(snapshot));
 
         await db.collection("counters")
-            .where('leftCharacter', "==", currentCounterCharacter.name)
-            .where('rightCharacter', "==", selectedCharacterName)
+            .where('leftCharacter', "==", selectedCharacter.name)
+            .where('rightCharacter', "==", currentCounterCharacter.name)
             .get()
-            .then(snapshot => score = getScore(snapshot));
+            .then(snapshot => score -= getScore(snapshot));
 
-        setScore(score);
+        return score;
     };
 
-    useEffect(() => getVotes(), []);
+    const fetchCounters = () => {
+        getScore().then(score => setScore(score));
+    };
+
+    useEffect(() => fetchCounters(), [fetchCounters]);
 
     return (
         <div>

@@ -4,6 +4,7 @@ import CardList from "./components/CardList";
 import FirebaseConnectionProvider from "./providers/FirebaseConnectionProvider";
 import CharacterListProvider from "./providers/CharacterListProvider";
 import CharacterContext from './CharacterContext'
+import CounterList from "./components/CounterList";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
             <CharacterContext.Provider value={[selectedCharacter, setSelectedCharacter]}>
                 <CharacterListProvider>
                     <CardList/>
+                    <CounterList/>
                 </CharacterListProvider>
             </CharacterContext.Provider>
         </FirebaseConnectionProvider>

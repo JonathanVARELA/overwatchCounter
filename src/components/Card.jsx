@@ -9,7 +9,7 @@ const Card = ({avatar, name, type, sound}) => {
 
     const updateSelectedCharacter = () => {
         audio.play();
-        setSelectedCharacter(name);
+        setSelectedCharacter({avatar, name, type, sound});
     };
 
     return (

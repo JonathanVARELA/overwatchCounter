@@ -1,8 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import "./CardList.css"
 import CounterCard from "./CounterCard";
+import CharacterContext from "../CharacterContext";
 
-const CounterList = ({ selectedCharacter, characters }) => {
+const CounterList = ({characters}) => {
+
+    const [selectedCharacter,] = useContext(CharacterContext);
 
     return (
         <div>
@@ -11,7 +14,19 @@ const CounterList = ({ selectedCharacter, characters }) => {
             </h1>
 
             <div id={"counterList"}>
-                {characters.map(character => React.createElement(CounterCard, {selectedCharacter: selectedCharacter, currentCounterCharacter: character}))}
+                {selectedCharacter
+                    ? characters.map(
+                            (character, i) => React.createElement(
+                                CounterCard,
+                                {
+                                    key: `${selectedCharacter}_${character}-${i}`,
+                                    selectedCharacter: selectedCharacter,
+                                    currentCounterCharacter: character
+                                }
+                            )
+                        )
+                    : <pre>Please select a character</pre>
+                }
             </div>
         </div>
     )

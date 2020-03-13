@@ -12,7 +12,7 @@ const CardList = ({characters}) => {
             <h1>
                 Characters
             </h1>
-            <p>SelectedCharacter: {selectedCharacter}</p>
+            <p>SelectedCharacter: {selectedCharacter.name}</p>
             <div id={"cardList"}>
                 {
                     characters

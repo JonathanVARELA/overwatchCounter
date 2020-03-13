@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/CounterCard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/providers/CharacterListProvider.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/providers/FirebaseConnectionProvider.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CardList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CounterCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterCard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CounterList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VoteCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CharacterContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VoteCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/providers/CharacterListProvider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/CharacterListProvider.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584002961399</updated>
       <workItem from="1584002964579" duration="12100000" />
-      <workItem from="1584077116677" duration="10408000" />
+      <workItem from="1584077116677" duration="15522000" />
     </task>
     <task id="LOCAL-00001" summary="add firestore connection&#10;create card component&#10;create card list component&#10;load characters from firestore&#10;display characters (POC)">
       <created>1584009645712</created>
@@ -102,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584017397652</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add selectedCharacter context&#10;create firebase connection provider component&#10;create character list provider component">
+      <created>1584088165425</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584088165425</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,17 +113,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add firestore connection&#10;create card component&#10;create card list component&#10;load characters from firestore&#10;display characters (POC)" />
     <MESSAGE value="Add characters sound on click" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add characters sound on click" />
+    <MESSAGE value="Add selectedCharacter context&#10;create firebase connection provider component&#10;create character list provider component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add selectedCharacter context&#10;create firebase connection provider component&#10;create character list provider component" />
   </component>
   <component name="WindowStateProjectService">
     <state x="930" y="180" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584087589673">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="930" y="180" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1584087589673" />
-    <state x="423" y="0" key="CommitChangelistDialog2" timestamp="1584017396417">
+    <state x="423" y="0" key="CommitChangelistDialog2" timestamp="1584088163831">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="423" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1584017396417" />
+    <state x="423" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1584088163831" />
     <state width="778" height="208" key="GridCell.Tab.0.bottom" timestamp="1584083350355">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -138,9 +141,13 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="778" height="208" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1584083350355" />
-    <state x="392" y="158" key="Vcs.Push.Dialog.v2" timestamp="1584017403554">
+    <state x="392" y="158" key="Vcs.Push.Dialog.v2" timestamp="1584088339355">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="158" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584017403554" />
+    <state x="392" y="158" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584088339355" />
+    <state x="486" y="146" width="627" height="568" key="find.popup" timestamp="1584093344682">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="486" y="146" width="627" height="568" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1584093344682" />
   </component>
 </project>

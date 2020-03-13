@@ -26,7 +26,7 @@ const CharacterListProvider = (props) => {
             {
                 characters
                 ? React.Children.toArray(props.children)
-                        .map((child) => React.cloneElement(child, {characters: characters}) )
+                        .map(child => React.cloneElement(child, {characters: characters}) )
                 : <pre>Loading characters</pre>
             }
         </>
