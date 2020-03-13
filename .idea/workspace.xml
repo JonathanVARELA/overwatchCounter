@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/CounterList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/VoteCard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/VoteCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CounterCard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/providers/CharacterListProvider.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/providers/FirebaseConnectionProvider.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardList.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CardList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CounterList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/VoteCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/CharacterContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/VoteCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +50,12 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jonat_000\WebstormProjects\overwatch-counter\src\providers" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jonat_000\WebstormProjects\overwatch-counter\src\components" />
     </key>
@@ -77,7 +85,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584002961399</updated>
-      <workItem from="1584002964579" duration="11900000" />
+      <workItem from="1584002964579" duration="12100000" />
+      <workItem from="1584077116677" duration="10408000" />
     </task>
     <task id="LOCAL-00001" summary="add firestore connection&#10;create card component&#10;create card list component&#10;load characters from firestore&#10;display characters (POC)">
       <created>1584009645712</created>
@@ -86,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584009645712</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add characters sound on click">
+      <created>1584017397652</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584017397652</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,16 +110,37 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add firestore connection&#10;create card component&#10;create card list component&#10;load characters from firestore&#10;display characters (POC)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add firestore connection&#10;create card component&#10;create card list component&#10;load characters from firestore&#10;display characters (POC)" />
+    <MESSAGE value="Add characters sound on click" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add characters sound on click" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="423" y="0" key="CommitChangelistDialog2" timestamp="1584009644412">
+    <state x="930" y="180" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584087589673">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="423" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1584009644412" />
-    <state x="392" y="158" key="Vcs.Push.Dialog.v2" timestamp="1584009650022">
+    <state x="930" y="180" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1584087589673" />
+    <state x="423" y="0" key="CommitChangelistDialog2" timestamp="1584017396417">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="158" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584009650022" />
+    <state x="423" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1584017396417" />
+    <state width="778" height="208" key="GridCell.Tab.0.bottom" timestamp="1584083350355">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="778" height="208" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1584083350355" />
+    <state width="778" height="208" key="GridCell.Tab.0.center" timestamp="1584083350355">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="778" height="208" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1584083350355" />
+    <state width="778" height="208" key="GridCell.Tab.0.left" timestamp="1584083350355">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="778" height="208" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1584083350355" />
+    <state width="778" height="208" key="GridCell.Tab.0.right" timestamp="1584083350355">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="778" height="208" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1584083350355" />
+    <state x="392" y="158" key="Vcs.Push.Dialog.v2" timestamp="1584017403554">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="158" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584017403554" />
   </component>
 </project>
