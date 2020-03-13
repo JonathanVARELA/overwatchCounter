@@ -8,11 +8,14 @@ const CharacterListProvider = (props) => {
 
     const getCharacters = async () => {
         const db = firebase.firestore();
-        return await db.collection("characters").get().then(snapshot => {
-            const characters = [];
-            snapshot.forEach(doc => characters.push(doc.data()));
-            return characters;
-        })
+        return await db
+            .collection("characters")
+            .get()
+            .then(snapshot => {
+                const characters = [];
+                snapshot.forEach(doc => characters.push(doc.data()));
+                return characters;
+            })
     };
 
     const fetchCharacters = () => {
@@ -25,9 +28,9 @@ const CharacterListProvider = (props) => {
         <>
             {
                 characters
-                ? React.Children.toArray(props.children)
-                        .map(child => React.cloneElement(child, {characters: characters}) )
-                : <pre>Loading characters</pre>
+                    ? React.Children.toArray(props.children)
+                        .map(child => React.cloneElement(child, {characters: characters}))
+                    : <pre>Loading characters</pre>
             }
         </>
     )
