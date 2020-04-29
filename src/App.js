@@ -7,6 +7,7 @@ import CharacterContext from './CharacterContext'
 import CounterList from "./components/CounterList";
 import Header from "./components/Header";
 import MainFilter from "./components/MainFilter";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -20,11 +21,11 @@ function App() {
                     <CharacterListProvider>
                         <MainFilter>
                             <CardList/>
-                            <CounterList/>
                         </MainFilter>
                     </CharacterListProvider>
                 </CharacterContext.Provider>
             </FirebaseConnectionProvider>
+            <Footer/>
         </>
     );
 }
