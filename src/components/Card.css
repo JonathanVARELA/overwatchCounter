@@ -3,9 +3,21 @@
     flex-direction:column-reverse;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 20vh;
-    height: 34.4vh;
     background-color: rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 60vh) {
+    .card {
+        width: 20vh;
+        height: 34.4vh;
+    }
+}
+
+@media screen and (max-width: 60vh) {
+    .card {
+        width: 32vw;
+        height: 55vw;
+    }
 }
 
 .card-name {
