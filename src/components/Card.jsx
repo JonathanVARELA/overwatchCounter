@@ -1,6 +1,7 @@
 import React, {useContext} from 'react';
 import "./Card.css"
 import CharacterContext from './../CharacterContext'
+
 const Card = ({avatar, name, type, sound}) => {
 
     const audio = new Audio(sound);
@@ -13,8 +14,12 @@ const Card = ({avatar, name, type, sound}) => {
     };
 
     return (
-        <div className={"card"}>
-            <img src={avatar} onClick={() => updateSelectedCharacter()} alt={"Avatar image of " + name}/>
+        <div className={"card"} style={{ backgroundImage: `url(${avatar})`}} onClick={() => updateSelectedCharacter()} alt={"Avatar image of " + name}>
+            <div className={"card-name"}>
+                <p>
+                    {name}
+                </p>
+            </div>
         </div>
     )
 };
