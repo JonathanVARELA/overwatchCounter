@@ -12,6 +12,16 @@
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+.character-type {
+    flex-grow: 1;
+}
+
+.character-type > img {
+    max-width: 3vh;
+    margin-left: .8vh;
+    margin-top: .8vh;
+}
+
 .card-name > p {
     font-size: 1.1em;
     font-family: "Roboto Condensed", sans-serif;
