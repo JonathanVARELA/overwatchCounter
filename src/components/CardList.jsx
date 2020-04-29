@@ -9,10 +9,6 @@ const CardList = ({characters}) => {
 
     return (
         <div>
-            <h1>
-                Characters
-            </h1>
-            <p>SelectedCharacter: {selectedCharacter.name}</p>
             <div id={"cardList"}>
                 {
                     characters

@@ -14,12 +14,14 @@ const CharacterListProvider = (props) => {
             .then(snapshot => {
                 const characters = [];
                 snapshot.forEach(doc => characters.push(doc.data()));
+                characters.sort((a, b) => a.name.localeCompare(b.name));
                 return characters;
             })
     };
 
     const fetchCharacters = () => {
-        getCharacters().then(characters => setCharacters(characters));
+        getCharacters()
+            .then(characters => setCharacters(characters));
     };
 
     useEffect(() => fetchCharacters(), []);

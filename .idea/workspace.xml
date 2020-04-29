@@ -32,12 +32,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="add fonts">
-      <change afterPath="$PROJECT_DIR$/src/components/Header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/logo.svg" afterDir="false" />
+    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="ajout du header">
+      <change afterPath="$PROJECT_DIR$/src/components/MainFilter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MainFilter.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/providers/CharacterListProvider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/CharacterListProvider.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +119,7 @@
       <workItem from="1584002964579" duration="12100000" />
       <workItem from="1584077116677" duration="19023000" />
       <workItem from="1588145272253" duration="515000" />
-      <workItem from="1588145805505" duration="11100000" />
+      <workItem from="1588145805505" duration="12983000" />
     </task>
     <task id="LOCAL-00001" summary="add firestore connection&#10;create card component&#10;create card list component&#10;load characters from firestore&#10;display characters (POC)">
       <created>1584009645712</created>
@@ -160,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588154715733</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ajout du header">
+      <created>1588157883541</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1588157883541</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +194,8 @@
     <MESSAGE value="Fetch counter scores from firebase" />
     <MESSAGE value="add font&#10;add card hover effect&#10;add card names" />
     <MESSAGE value="add fonts" />
-    <option name="LAST_COMMIT_MESSAGE" value="add fonts" />
+    <MESSAGE value="ajout du header" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout du header" />
   </component>
   <component name="WindowStateProjectService">
     <state x="930" y="180" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584087589673">
@@ -223,18 +234,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588146037939" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1588154717175">
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1588157897770">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="392" y="158" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584097007025" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588154717175" />
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588157897770" />
     <state x="2687" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588149928042">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2687" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588149928042" />
-    <state x="486" y="146" width="627" height="568" key="find.popup" timestamp="1584093344682">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state x="2503" y="177" width="753" height="687" key="find.popup" timestamp="1588158129018">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="486" y="146" width="627" height="568" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1584093344682" />
+    <state x="2503" y="177" width="753" height="687" key="find.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588158129018" />
   </component>
 </project>

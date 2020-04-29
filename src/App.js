@@ -6,6 +6,7 @@ import CharacterListProvider from "./providers/CharacterListProvider";
 import CharacterContext from './CharacterContext'
 import CounterList from "./components/CounterList";
 import Header from "./components/Header";
+import MainFilter from "./components/MainFilter";
 
 function App() {
 
@@ -13,12 +14,14 @@ function App() {
 
     return (
         <>
-            <Header></Header>
+            <Header/>
             <FirebaseConnectionProvider>
                 <CharacterContext.Provider value={[selectedCharacter, setSelectedCharacter]}>
                     <CharacterListProvider>
-                        <CardList/>
-                        <CounterList/>
+                        <MainFilter>
+                            <CardList/>
+                            <CounterList/>
+                        </MainFilter>
                     </CharacterListProvider>
                 </CharacterContext.Provider>
             </FirebaseConnectionProvider>
