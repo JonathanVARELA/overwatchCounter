@@ -32,7 +32,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="better responsive">
+    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="better responsive v2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Card.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.css" afterDir="false" />
     </list>
@@ -113,7 +113,7 @@
       <workItem from="1584002964579" duration="12100000" />
       <workItem from="1584077116677" duration="19023000" />
       <workItem from="1588145272253" duration="515000" />
-      <workItem from="1588145805505" duration="26358000" />
+      <workItem from="1588145805505" duration="26575000" />
     </task>
     <task id="LOCAL-00001" summary="add firestore connection&#10;create card component&#10;create card list component&#10;load characters from firestore&#10;display characters (POC)">
       <created>1584009645712</created>
@@ -199,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588174010084</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="better responsive v2">
+      <created>1588174414108</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1588174414108</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +236,8 @@
     <MESSAGE value="sticky filter" />
     <MESSAGE value="add discover more" />
     <MESSAGE value="better responsive" />
-    <option name="LAST_COMMIT_MESSAGE" value="better responsive" />
+    <MESSAGE value="better responsive v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="better responsive v2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="930" y="180" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584087589673">
@@ -268,11 +276,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588146037939" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1588174011778">
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1588174415700">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="392" y="158" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584097007025" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588174011778" />
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588174415700" />
     <state x="2687" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588149928042">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
