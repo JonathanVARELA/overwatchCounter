@@ -3,4 +3,19 @@
     min-height: 50px;
     min-width: 100%;
     bottom: 0;
+    color: #c9c9c9;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: "Monstserrat-Bold", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.footer > span {
+    min-height: 100%;
+    align-self: center;
+    margin: 0 10px 0 10px;
+    letter-spacing: .03em;
 }

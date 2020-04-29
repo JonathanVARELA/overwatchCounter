@@ -8,6 +8,7 @@ import CounterList from "./components/CounterList";
 import Header from "./components/Header";
 import MainFilter from "./components/MainFilter";
 import Footer from "./components/Footer";
+import DiscoverMore from "./components/DiscoverMore";
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
                     </CharacterListProvider>
                 </CharacterContext.Provider>
             </FirebaseConnectionProvider>
+            <DiscoverMore/>
             <Footer/>
         </>
     );

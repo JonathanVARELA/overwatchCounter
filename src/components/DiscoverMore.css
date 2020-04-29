@@ -1,0 +1,49 @@
+.discover-more {
+    padding-top: 5vh;
+    display: flex;
+    justify-content: center;
+    background-color: #c9c9c9;
+    flex-direction: column;
+}
+
+.discover-more > div {
+    display: flex;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 800px) {
+    .discover-more > div {
+        flex-direction: row;
+    }
+
+    .discover-more > div > img {
+        max-width: 20vh;
+        margin: 3vh 5vh 3vh 5vh;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .discover-more > div {
+        flex-direction: column;
+    }
+    .discover-more > div > img {
+        max-width: 20vh;
+        margin: 3vh;
+    }
+}
+
+.discover-more > p {
+    text-align: center;
+    font-size: 1.4em;
+    font-family: "Monstserrat-Bold", sans-serif;
+    font-weight: bold;
+    color: #232323;
+    margin: 0 3vh 0 3vh;
+}
+
+.discover-more > img {
+    margin: 3vh;
+    max-height: 20vh;
+}
