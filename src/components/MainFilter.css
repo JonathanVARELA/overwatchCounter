@@ -11,6 +11,13 @@
     background-color: #a86b12;
 }
 
+@media screen and (max-width: 800px) {
+    .main-filter {
+        position: fixed;
+        bottom: 0;
+    }
+}
+
 .main-filter > span {
     color: white;
     font-family: Monstserrat-Regular, sans-serif;

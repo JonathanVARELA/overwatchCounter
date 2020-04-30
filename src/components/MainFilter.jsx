@@ -17,6 +17,8 @@ const MainFilter = ({characters, children}) => {
     const [selectedFilters, setSelectedFilters] = useState({list: []});
 
     const handleScroll = () => {
+        console.log(window.innerWidth, window.outerWidth);
+        if (window.innerWidth <= 801) return;
         if (ref.current) {
             if (initialMainFilterContainerOffsetTop === -1) {
                 initialMainFilterContainerOffsetTop = ref.current.offsetTop
