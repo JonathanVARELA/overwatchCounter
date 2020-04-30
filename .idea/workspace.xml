@@ -32,9 +32,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="fix list cover filter menu while loading">
+    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="remove useless placeholder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainFilter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainFilter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardList.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +114,7 @@
       <workItem from="1584077116677" duration="19023000" />
       <workItem from="1588145272253" duration="515000" />
       <workItem from="1588145805505" duration="28544000" />
-      <workItem from="1588231190177" duration="35114000" />
+      <workItem from="1588231190177" duration="37249000" />
     </task>
     <task id="LOCAL-00001" summary="add firestore connection&#10;create card component&#10;create card list component&#10;load characters from firestore&#10;display characters (POC)">
       <created>1584009645712</created>
@@ -284,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588269250388</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="remove useless placeholder">
+      <created>1588269941498</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1588269941498</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +334,8 @@
     <MESSAGE value="make scroll smooth &lt;3" />
     <MESSAGE value="animate character list &lt;3" />
     <MESSAGE value="fix list cover filter menu while loading" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix list cover filter menu while loading" />
+    <MESSAGE value="remove useless placeholder" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove useless placeholder" />
   </component>
   <component name="WindowStateProjectService">
     <state x="3036" y="218" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588250732195">
@@ -367,15 +375,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588146037939" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1588269252963">
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1588269942767">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="392" y="158" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584097007025" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588269252963" />
-    <state x="2012" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1588267091455">
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588269942767" />
+    <state x="2012" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1588271087549">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2012" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588267091455" />
+    <state x="2012" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588271087549" />
     <state x="2687" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588149928042">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
