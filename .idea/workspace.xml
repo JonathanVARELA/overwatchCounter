@@ -32,10 +32,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="fix svg on chrome">
-      <change afterPath="$PROJECT_DIR$/src/utils/AudioPlayer.js" afterDir="false" />
+    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="make sound play only once">
+      <change afterPath="$PROJECT_DIR$/src/components/CharacteerCounterModal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CharacterCounterModal.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +46,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -75,14 +76,14 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\jonat\WebstormProjects\overwatchCounter\src\components" />
-      <recent name="C:\Users\jonat_000\WebstormProjects\overwatch-counter\src\components" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jonat\WebstormProjects\overwatchCounter\src\images" />
       <recent name="C:\Users\jonat\WebstormProjects\overwatchCounter\public" />
       <recent name="C:\Users\jonat_000\WebstormProjects\overwatch-counter\src\providers" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jonat\WebstormProjects\overwatchCounter\src\components" />
+      <recent name="C:\Users\jonat_000\WebstormProjects\overwatch-counter\src\components" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -115,7 +116,7 @@
       <workItem from="1584077116677" duration="19023000" />
       <workItem from="1588145272253" duration="515000" />
       <workItem from="1588145805505" duration="28544000" />
-      <workItem from="1588231190177" duration="3440000" />
+      <workItem from="1588231190177" duration="5744000" />
     </task>
     <task id="LOCAL-00001" summary="add firestore connection&#10;create card component&#10;create card list component&#10;load characters from firestore&#10;display characters (POC)">
       <created>1584009645712</created>
@@ -222,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588176602103</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="make sound play only once">
+      <created>1588235164551</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1588235164551</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +264,8 @@
     <MESSAGE value="better responsive v2" />
     <MESSAGE value="almost it !" />
     <MESSAGE value="fix svg on chrome" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix svg on chrome" />
+    <MESSAGE value="make sound play only once" />
+    <option name="LAST_COMMIT_MESSAGE" value="make sound play only once" />
   </component>
   <component name="WindowStateProjectService">
     <state x="930" y="180" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584087589673">
@@ -295,11 +304,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588146037939" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1588176603754">
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1588235169910">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="392" y="158" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584097007025" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588176603754" />
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588235169910" />
     <state x="2687" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588149928042">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
