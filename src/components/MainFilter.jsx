@@ -11,7 +11,6 @@ const MainFilter = ({characters, children}) => {
     const [filteredCharacters, setFilteredCharacters] = useState();
 
     const [isSticky, setSticky] = useState(false);
-    const [placeHolderHeight, setPlaceHolderHeight] = useState(0);
 
     const ref = useRef(null);
     let initialMainFilterContainerOffsetTop = -1;
@@ -26,10 +25,8 @@ const MainFilter = ({characters, children}) => {
                 initialMainFilterContainerOffsetTop = ref.current.offsetTop
             }
             if (window.pageYOffset >= initialMainFilterContainerOffsetTop) {
-                setPlaceHolderHeight(ref.current.offsetHeight);
                 setSticky(true);
             } else {
-                setPlaceHolderHeight(0);
                 setSticky(false);
             }
         }
@@ -74,7 +71,6 @@ const MainFilter = ({characters, children}) => {
 
     return (
         <>
-            <div className={"stickyPlaceHolder"} style={{minHeight: placeHolderHeight + 'px'}}/>
             <div ref={ref} className={`main-filter sticky-wrapper${isSticky ? ' sticky' : ''}`}>
                 <span>FILTERS</span>
                 <div>
