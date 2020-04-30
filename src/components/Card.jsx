@@ -31,14 +31,15 @@ const Card = ({avatar, name, type, sound}) => {
     };
 
     return (
-        <div className={"card"} style={{backgroundImage: `url(${avatar})`}} onClick={() => updateSelectedCharacter()}>
+        <div className={"card"} style={{backgroundImage: `url(${avatar})`}}
+             onClick={() => updateSelectedCharacter()}>
             <div className={"card-name"}>
                 <p>
                     {name}
                 </p>
             </div>
             <div className={"character-type"}>
-                <img src={getTypeImage(type)} alt={type} />
+                <img src={getTypeImage(type)} alt={type}/>
             </div>
         </div>
     )
