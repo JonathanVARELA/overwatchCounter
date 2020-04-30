@@ -34,7 +34,7 @@ const MainFilter = ({characters, children}) => {
     };
 
     const filterCharacters = (type) => {
-
+        window.scrollTo(0, 0);
         let filter = [];
         if (selectedFilters.list.includes(type)) {
             filter = selectedFilters.list.filter(value => value !== type);
