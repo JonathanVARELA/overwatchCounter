@@ -32,8 +32,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="put filter bar to bottom when on mobile">
+    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="scroll to top when filter">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainFilter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainFilter.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MainFilter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainFilter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/arrow.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +116,7 @@
       <workItem from="1584077116677" duration="19023000" />
       <workItem from="1588145272253" duration="515000" />
       <workItem from="1588145805505" duration="28544000" />
-      <workItem from="1588231190177" duration="13992000" />
+      <workItem from="1588231190177" duration="18563000" />
     </task>
     <task id="LOCAL-00001" summary="add firestore connection&#10;create card component&#10;create card list component&#10;load characters from firestore&#10;display characters (POC)">
       <created>1584009645712</created>
@@ -248,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588246634888</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="scroll to top when filter">
+      <created>1588246776584</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1588246776584</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,13 +296,15 @@
     <MESSAGE value="pretty scrollbar" />
     <MESSAGE value="add filter" />
     <MESSAGE value="put filter bar to bottom when on mobile" />
-    <option name="LAST_COMMIT_MESSAGE" value="put filter bar to bottom when on mobile" />
+    <MESSAGE value="scroll to top when filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="scroll to top when filter" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="930" y="180" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584087589673">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state x="3036" y="218" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588250732195">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="930" y="180" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1584087589673" />
+    <state x="3036" y="218" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588250732195" />
     <state x="664" y="188" key="#npm_start" timestamp="1588146085721">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -325,11 +337,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588146037939" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1588246638242">
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1588246777740">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="392" y="158" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584097007025" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588246638242" />
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588246777740" />
     <state x="2687" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588149928042">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

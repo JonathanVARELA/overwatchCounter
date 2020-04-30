@@ -38,7 +38,7 @@
     flex-grow: 1;
 }
 
-.main-filter > div > img {
+.main-filter > div > .filter-icon {
     max-height: 50px;
     margin-right: 20px;
 }
@@ -48,7 +48,38 @@
     filter: invert(30%) sepia(35%) saturate(3007%) hue-rotate(193deg) ;
 }
 
-.main-filter > div > img:hover {
+.main-filter > div > .filter-icon:hover {
     max-height: 56px;
     margin: -3px 17px -3px -3px;
+}
+
+.main-filter > .scroll-up-button {
+    background-color: #232323;
+    align-self: stretch;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    max-width: 120px;
+}
+
+.main-filter > .scroll-up-button > img:hover {
+    max-height: 51px;
+    margin: 0 -3px 0 -3px;
+}
+
+.main-filter > .scroll-up-button > img {
+    align-self: center;
+    max-height: 45px;
+}
+
+.scroll-up-button > img {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.scroll-left-button > img {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
 }

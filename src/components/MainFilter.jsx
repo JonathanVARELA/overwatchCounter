@@ -3,6 +3,7 @@ import "./MainFilter.css"
 import typeDamageImage from "../images/damage.svg"
 import typeTankImage from "../images/tank.svg"
 import typeSupportImage from "../images/support.svg"
+import rightArrow from "../images/arrow.svg";
 
 const MainFilter = ({characters, children}) => {
 
@@ -76,15 +77,19 @@ const MainFilter = ({characters, children}) => {
             <div ref={ref} className={`main-filter sticky-wrapper${isSticky ? ' sticky' : ''}`}>
                 <span>FILTERS</span>
                 <div>
-                    <img className={selectedFilters.list.includes("damage") ? "selected-filter" : ""}
+                    <img className={"filter-icon " + (selectedFilters.list.includes("damage") ? "selected-filter" : "")}
                          src={typeDamageImage} alt="Damage"
                          onClick={() => filterCharacters("damage")}/>
-                    <img className={selectedFilters.list.includes("support") ? "selected-filter" : ""}
+                    <img className={"filter-icon " + (selectedFilters.list.includes("support") ? "selected-filter" : "")}
                          src={typeSupportImage} alt="Support"
                          onClick={() => filterCharacters("support")}/>
-                    <img className={selectedFilters.list.includes("tank") ? "selected-filter" : ""} src={typeTankImage}
+                    <img className={"filter-icon " + (selectedFilters.list.includes("tank") ? "selected-filter" : "")}
+                         src={typeTankImage}
                          alt="Tank"
                          onClick={() => filterCharacters("tank")}/>
+                </div>
+                <div className={"scroll-up-button"}>
+                    <img src={rightArrow} alt={"scroll up"} onClick={() => window.scroll(0, 0)}/>
                 </div>
             </div>
             {
