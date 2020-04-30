@@ -4,6 +4,7 @@ import typeDamageImage from "../images/damage.svg"
 import typeTankImage from "../images/tank.svg"
 import typeSupportImage from "../images/support.svg"
 import rightArrow from "../images/arrow.svg";
+import {animateScroll as scroll} from "react-scroll";
 
 const MainFilter = ({characters, children}) => {
 
@@ -35,7 +36,7 @@ const MainFilter = ({characters, children}) => {
     };
 
     const filterCharacters = (type) => {
-        window.scrollTo(0, 0);
+        scroll.scrollToTop();
         let filter = [];
         if (selectedFilters.list.includes(type)) {
             filter = selectedFilters.list.filter(value => value !== type);
@@ -80,16 +81,17 @@ const MainFilter = ({characters, children}) => {
                     <img className={"filter-icon " + (selectedFilters.list.includes("damage") ? "selected-filter" : "")}
                          src={typeDamageImage} alt="Damage"
                          onClick={() => filterCharacters("damage")}/>
-                    <img className={"filter-icon " + (selectedFilters.list.includes("support") ? "selected-filter" : "")}
-                         src={typeSupportImage} alt="Support"
-                         onClick={() => filterCharacters("support")}/>
+                    <img
+                        className={"filter-icon " + (selectedFilters.list.includes("support") ? "selected-filter" : "")}
+                        src={typeSupportImage} alt="Support"
+                        onClick={() => filterCharacters("support")}/>
                     <img className={"filter-icon " + (selectedFilters.list.includes("tank") ? "selected-filter" : "")}
                          src={typeTankImage}
                          alt="Tank"
                          onClick={() => filterCharacters("tank")}/>
                 </div>
                 <div className={"scroll-up-button"}>
-                    <img src={rightArrow} alt={"scroll up"} onClick={() => window.scroll(0, 0)}/>
+                    <img src={rightArrow} alt={"scroll up"} onClick={() => scroll.scrollToTop()}/>
                 </div>
             </div>
             {
