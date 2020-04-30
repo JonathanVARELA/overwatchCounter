@@ -3,13 +3,16 @@
     flex-wrap: wrap;
     background-color: #c9c9c9;
     justify-content: center;
+    transition: height;
+    transition-duration: 500ms;
+}
+
+@media screen and (min-width: 800px) {
+    #cardList {
+        padding: .5vh 15vw 0 15vw;
+    }
 }
 
 .sticky + #cardList {
     padding-top: 70px;
-}
-
-div[style*="opacity: 0"] {
-    display: none !important;
-    background-color: red;
 }

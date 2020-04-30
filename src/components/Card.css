@@ -8,6 +8,7 @@
 
 @media screen and (min-width: 60vh) {
     .card {
+        margin: .5vh;
         width: 20vh;
         height: 34.4vh;
     }
