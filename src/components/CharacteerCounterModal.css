@@ -1,5 +1,6 @@
 .character-counter-modal {
+    position: fixed;
     background-color: #232323;
-    min-width: 100%;
-    min-height: 100%;
+    min-width: 0vw;
+    min-height: 0vh;
 }

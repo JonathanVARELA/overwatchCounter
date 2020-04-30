@@ -4,8 +4,7 @@ import "./CharacteerCounterModal.css"
 const CharacterCounterModal = () => {
 
     return (
-        <div className={"character-counter-modal"}>
-        </div>
+        <div className={"character-counter-modal"}/>
     )
 };
 

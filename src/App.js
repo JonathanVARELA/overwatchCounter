@@ -9,6 +9,7 @@ import Header from "./components/Header";
 import MainFilter from "./components/MainFilter";
 import Footer from "./components/Footer";
 import DiscoverMore from "./components/DiscoverMore";
+import CharacterCounterModal from "./components/CharacterCounterModal";
 
 function App() {
 
@@ -16,9 +17,10 @@ function App() {
 
     return (
         <>
-            <Header/>
             <FirebaseConnectionProvider>
                 <CharacterContext.Provider value={[selectedCharacter, setSelectedCharacter]}>
+                    <CharacterCounterModal/>
+                    <Header/>
                     <CharacterListProvider>
                         <MainFilter>
                             <CardList/>

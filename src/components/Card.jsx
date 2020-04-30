@@ -38,7 +38,7 @@ const Card = ({avatar, name, type, sound}) => {
                 </p>
             </div>
             <div className={"character-type"}>
-                <img src={getTypeImage(type)} alt="test"/>
+                <img src={getTypeImage(type)} alt={type} />
             </div>
         </div>
     )

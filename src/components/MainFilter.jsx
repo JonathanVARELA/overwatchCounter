@@ -1,5 +1,8 @@
 import React, {useEffect, useRef, useState} from 'react';
 import "./MainFilter.css"
+import typeDamageImage from "../images/damage.svg"
+import typeTankImage from "../images/tank.svg"
+import typeSupportImage from "../images/support.svg"
 
 const MainFilter = ({characters, children}) => {
 
@@ -10,6 +13,8 @@ const MainFilter = ({characters, children}) => {
 
     const ref = useRef(null);
     let initialMainFilterContainerOffsetTop = -1;
+
+    const [selectedFilters, setSelectedFilters] = useState({list: []});
 
     const handleScroll = () => {
         if (ref.current) {
@@ -26,6 +31,31 @@ const MainFilter = ({characters, children}) => {
         }
     };
 
+    const filterCharacters = (type) => {
+
+        let filter = [];
+        if (selectedFilters.list.includes(type)) {
+            filter = selectedFilters.list.filter(value => value !== type);
+        } else {
+            // just uncomment this to enable multi selection feature :)
+            // filter = [...selectedFilters.list, type];
+            filter = [type];
+        }
+
+        if (filter.length === 3) {
+            filter = []
+        }
+        console.log(filter.length);
+        if (filter.length === 0) {
+            setFilteredCharacters(characters);
+            setSelectedFilters({list: filter});
+            return;
+        }
+
+        setFilteredCharacters(characters.filter(character => filter.includes(character.type)));
+        setSelectedFilters({list: filter});
+    }
+
     useEffect(() => {
         const filterCharacters = () => {
             setFilteredCharacters(characters)
@@ -41,7 +71,20 @@ const MainFilter = ({characters, children}) => {
     return (
         <>
             <div className={"stickyPlaceHolder"} style={{minHeight: placeHolderHeight + 'px'}}/>
-            <div ref={ref} className={`main-filter sticky-wrapper${isSticky ? ' sticky' : ''}`}/>
+            <div ref={ref} className={`main-filter sticky-wrapper${isSticky ? ' sticky' : ''}`}>
+                <span>FILTERS</span>
+                <div>
+                    <img className={selectedFilters.list.includes("damage") ? "selected-filter" : ""}
+                         src={typeDamageImage} alt="Damage"
+                         onClick={() => filterCharacters("damage")}/>
+                    <img className={selectedFilters.list.includes("support") ? "selected-filter" : ""}
+                         src={typeSupportImage} alt="Support"
+                         onClick={() => filterCharacters("support")}/>
+                    <img className={selectedFilters.list.includes("tank") ? "selected-filter" : ""} src={typeTankImage}
+                         alt="Tank"
+                         onClick={() => filterCharacters("tank")}/>
+                </div>
+            </div>
             {
                 characters
                     ? React.Children

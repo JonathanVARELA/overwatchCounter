@@ -4,6 +4,8 @@
     justify-content: center;
     background-color: #c9c9c9;
     flex-direction: column;
+    flex-grow: 1;
+    align-self: stretch;
 }
 
 .discover-more > div {

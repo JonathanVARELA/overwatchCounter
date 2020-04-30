@@ -1,10 +1,47 @@
 .main-filter {
     overflow: hidden;
-    background-color: #232323;
+    background-color: #a86b12;
     min-width: 100%;
     min-height: 70px;
+    display: flex;
+    align-content: center;
 }
 
 .stickyPlaceHolder {
-    background-color: #232323;
+    background-color: #a86b12;
+}
+
+.main-filter > span {
+    color: white;
+    font-family: Monstserrat-Regular, sans-serif;
+    letter-spacing: .03em;
+    font-weight: bold;
+    margin-left: 2.5vh;
+    min-width: 10vh;
+    align-self: center;
+    font-size: 1.2rem;
+}
+
+.main-filter > div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-content: center;
+    align-self: center;
+    flex-grow: 1;
+}
+
+.main-filter > div > img {
+    max-height: 50px;
+    margin-right: 20px;
+}
+
+.selected-filter {
+    -webkit-filter: invert(30%) sepia(35%) saturate(3007%) hue-rotate(193deg) ;
+    filter: invert(30%) sepia(35%) saturate(3007%) hue-rotate(193deg) ;
+}
+
+.main-filter > div > img:hover {
+    max-height: 56px;
+    margin: -3px 17px -3px -3px;
 }
