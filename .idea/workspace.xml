@@ -32,11 +32,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="almost it !">
+    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="fix svg on chrome">
+      <change afterPath="$PROJECT_DIR$/src/utils/AudioPlayer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/dota.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/dota.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hots.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/hots.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/lol.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/lol.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +114,8 @@
       <workItem from="1584002964579" duration="12100000" />
       <workItem from="1584077116677" duration="19023000" />
       <workItem from="1588145272253" duration="515000" />
-      <workItem from="1588145805505" duration="27238000" />
+      <workItem from="1588145805505" duration="28544000" />
+      <workItem from="1588231190177" duration="3440000" />
     </task>
     <task id="LOCAL-00001" summary="add firestore connection&#10;create card component&#10;create card list component&#10;load characters from firestore&#10;display characters (POC)">
       <created>1584009645712</created>
@@ -215,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588174642203</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fix svg on chrome">
+      <created>1588176602103</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1588176602103</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +238,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add firestore connection&#10;create card component&#10;create card list component&#10;load characters from firestore&#10;display characters (POC)" />
@@ -247,7 +255,8 @@
     <MESSAGE value="better responsive" />
     <MESSAGE value="better responsive v2" />
     <MESSAGE value="almost it !" />
-    <option name="LAST_COMMIT_MESSAGE" value="almost it !" />
+    <MESSAGE value="fix svg on chrome" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix svg on chrome" />
   </component>
   <component name="WindowStateProjectService">
     <state x="930" y="180" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584087589673">
@@ -262,35 +271,35 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="423" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1584097004494" />
-    <state width="1899" height="275" key="GridCell.Tab.0.bottom" timestamp="1588152741182">
+    <state width="1899" height="275" key="GridCell.Tab.0.bottom" timestamp="1588177894398">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="778" height="208" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1584083350355" />
-    <state width="1899" height="275" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588152741182" />
-    <state width="1899" height="275" key="GridCell.Tab.0.center" timestamp="1588152741181">
+    <state width="1899" height="275" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588177894398" />
+    <state width="1899" height="275" key="GridCell.Tab.0.center" timestamp="1588177894397">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="778" height="208" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1584083350355" />
-    <state width="1899" height="275" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588152741181" />
-    <state width="1899" height="275" key="GridCell.Tab.0.left" timestamp="1588152741181">
+    <state width="1899" height="275" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588177894397" />
+    <state width="1899" height="275" key="GridCell.Tab.0.left" timestamp="1588177894397">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="778" height="208" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1584083350355" />
-    <state width="1899" height="275" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588152741181" />
-    <state width="1899" height="275" key="GridCell.Tab.0.right" timestamp="1588152741181">
+    <state width="1899" height="275" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588177894397" />
+    <state width="1899" height="275" key="GridCell.Tab.0.right" timestamp="1588177894397">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="778" height="208" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1584083350355" />
-    <state width="1899" height="275" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588152741181" />
+    <state width="1899" height="275" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588177894397" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1588146037939">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588146037939" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1588174645093">
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1588176603754">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="392" y="158" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584097007025" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588174645093" />
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588176603754" />
     <state x="2687" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588149928042">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

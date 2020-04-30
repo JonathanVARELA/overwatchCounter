@@ -1,21 +1,19 @@
-import React, {useContext, useEffect} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import "./Card.css"
 import CharacterContext from './../CharacterContext'
 import typeDamageImage from "../images/damage.svg"
 import typeTankImage from "../images/tank.svg"
 import typeSupportImage from "../images/support.svg"
-
+import useAudio from "../utils/AudioPlayer";
 
 const Card = ({avatar, name, type, sound}) => {
 
-    let typeImage;
-
-    const audio = new Audio(sound);
-
     const [, setSelectedCharacter] = useContext(CharacterContext);
 
+    const [playSound] = useAudio(sound);
+
     const updateSelectedCharacter = () => {
-        audio.play();
+        playSound();
         setSelectedCharacter({avatar, name, type, sound});
     };
 
@@ -24,9 +22,9 @@ const Card = ({avatar, name, type, sound}) => {
             case "damage":
                 return typeDamageImage;
             case "support":
-                return  typeSupportImage;
+                return typeSupportImage;
             case "tank":
-                return  typeTankImage;
+                return typeTankImage;
             default:
                 return ""
         }
