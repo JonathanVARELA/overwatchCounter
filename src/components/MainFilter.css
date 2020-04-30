@@ -5,6 +5,7 @@
     min-height: 70px;
     display: flex;
     align-content: center;
+    z-index: 1;
 }
 
 .stickyPlaceHolder {
