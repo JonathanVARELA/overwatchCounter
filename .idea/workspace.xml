@@ -32,9 +32,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="ok, now it's fixed ! (i hope 🤞)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="transform svg to true vector images (make image x10 smaller)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -116,7 +114,7 @@
       <workItem from="1588231190177" duration="37554000" />
       <workItem from="1588272413835" duration="4270000" />
       <workItem from="1588580754237" duration="767000" />
-      <workItem from="1589275656737" duration="610000" />
+      <workItem from="1589275656737" duration="1177000" />
     </task>
     <task id="LOCAL-00001" summary="add firestore connection&#10;create card component&#10;create card list component&#10;load characters from firestore&#10;display characters (POC)">
       <created>1584009645712</created>
@@ -307,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588276078240</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="transform svg to true vector images (make image x10 smaller)">
+      <created>1589279696164</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1589279696164</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,7 +331,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add selectedCharacter context&#10;create firebase connection provider component&#10;create character list provider component" />
     <MESSAGE value="Fetch counter scores from firebase" />
     <MESSAGE value="add font&#10;add card hover effect&#10;add card names" />
     <MESSAGE value="add fonts" />
@@ -351,7 +355,8 @@
     <MESSAGE value="remove useless placeholder" />
     <MESSAGE value="small fix" />
     <MESSAGE value="ok, now it's fixed ! (i hope )" />
-    <option name="LAST_COMMIT_MESSAGE" value="ok, now it's fixed ! (i hope )" />
+    <MESSAGE value="transform svg to true vector images (make image x10 smaller)" />
+    <option name="LAST_COMMIT_MESSAGE" value="transform svg to true vector images (make image x10 smaller)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="3036" y="218" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588250732195">
@@ -391,10 +396,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588146037939" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1588276079977">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="470" y="191" key="Vcs.Push.Dialog.v2" timestamp="1589279698406">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="392" y="158" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584097007025" />
+    <state x="470" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589279698406" />
     <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588276079977" />
     <state x="2012" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1588271087549">
       <screen x="1920" y="0" width="1920" height="1040" />
