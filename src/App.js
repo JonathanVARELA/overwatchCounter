@@ -24,6 +24,7 @@ function App() {
                     <CharacterListProvider>
                         <MainFilter>
                             <CardList/>
+                            <CounterList/>
                         </MainFilter>
                     </CharacterListProvider>
                 </CharacterContext.Provider>

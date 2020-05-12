@@ -7,6 +7,12 @@
     transition-duration: 500ms;
 }
 
+@media screen and (max-width: 800px) {
+    #cardList.character-selected {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 800px) {
     #cardList {
         padding: .5vh 15vw 0 15vw;

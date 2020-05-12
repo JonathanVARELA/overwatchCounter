@@ -21,17 +21,17 @@ const CardList = ({characters}) => {
     )
 
     return (
-        <div id={"cardList"}>
-            {characters
-                ?
-                <AnimatedList animation={"zoom"}>
-                    {
-                        characters.map((character, i) => React.createElement(Card, {key: character.name + i, ...character}))
-                    }
-                </AnimatedList>
-                : <pre>Loading characters list</pre>
-            }
-        </div>
+            <div id={"cardList"} className={selectedCharacter ? "character-selected" : ""}>
+                {characters
+                    ?
+                    <AnimatedList animation={"zoom"}>
+                        {
+                            characters.map((character, i) => React.createElement(Card, {key: character.name + i, ...character}))
+                        }
+                    </AnimatedList>
+                    : <pre>Loading characters list</pre>
+                }
+            </div>
     )
 };
 

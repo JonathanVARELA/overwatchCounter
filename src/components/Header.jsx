@@ -1,13 +1,22 @@
 import React, {useContext} from 'react';
 import "./Header.css"
 import logo from '../images/logo.svg'
+import CharacterContext from "../CharacterContext";
 
 const Header = () => {
 
+    const [selectedCharacter,] = useContext(CharacterContext);
+
     return (
-        <div className={"header"}>
-            <img src={logo} alt="Overwatch Counter" />
-        </div>
+        <>
+            {
+                selectedCharacter
+                    ? <></>
+                    : <div className={"header"}>
+                        <img src={logo} alt="Overwatch Counter"/>
+                    </div>
+            }
+        </>
     )
 };
 

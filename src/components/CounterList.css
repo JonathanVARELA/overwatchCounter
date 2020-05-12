@@ -1,0 +1,8 @@
+#counterList {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #c9c9c9;
+    justify-content: center;
+    transition: height;
+    transition-duration: 500ms;
+}

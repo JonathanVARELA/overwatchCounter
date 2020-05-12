@@ -88,6 +88,7 @@ const MainFilter = ({characters, children}) => {
                     <img src={rightArrow} alt={"scroll up"} onClick={() => scroll.scrollToTop()}/>
                 </div>
             </div>
+            <body>
             {
                 characters
                     ? React.Children
@@ -95,6 +96,7 @@ const MainFilter = ({characters, children}) => {
                         .map(child => React.cloneElement(child, {characters: filteredCharacters}))
                     : <></>
             }
+            </body>
         </>
     )
 };

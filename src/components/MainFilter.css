@@ -17,6 +17,29 @@
         position: fixed;
         bottom: 0;
     }
+
+    .main-filter > div > .filter-icon {
+        max-height: 50px;
+        margin-right: 2vw !important;
+    }
+
+    .scroll-up-button {
+        max-width: 80px !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main-filter > span {
+        display: none;
+    }
+
+    .main-filter > div {
+        justify-content: center !important;
+    }
+
+    .main-filter > div > .filter-icon {
+        margin-right: 2vw !important;
+    }
 }
 
 .main-filter > span {
@@ -45,8 +68,8 @@
 }
 
 .selected-filter {
-    -webkit-filter: invert(30%) sepia(35%) saturate(3007%) hue-rotate(193deg) ;
-    filter: invert(30%) sepia(35%) saturate(3007%) hue-rotate(193deg) ;
+    -webkit-filter: invert(30%) sepia(35%) saturate(3007%) hue-rotate(193deg);
+    filter: invert(30%) sepia(35%) saturate(3007%) hue-rotate(193deg);
 }
 
 .main-filter > div > .filter-icon:hover {
