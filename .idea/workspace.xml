@@ -32,15 +32,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="adjust outline">
-      <change afterPath="$PROJECT_DIR$/src/components/CounterList.css" afterDir="false" />
+    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="make filter more responsive on small devices&#10;implement counterlist logic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CounterList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MainFilter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainFilter.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MainFilter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainFilter.jsx" afterDir="false" />
     </list>
@@ -125,7 +119,7 @@
       <workItem from="1588231190177" duration="37554000" />
       <workItem from="1588272413835" duration="4270000" />
       <workItem from="1588580754237" duration="767000" />
-      <workItem from="1589275656737" duration="5781000" />
+      <workItem from="1589275656737" duration="7770000" />
     </task>
     <task id="LOCAL-00001" summary="add firestore connection&#10;create card component&#10;create card list component&#10;load characters from firestore&#10;display characters (POC)">
       <created>1584009645712</created>
@@ -337,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589281884616</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="make filter more responsive on small devices&#10;implement counterlist logic">
+      <created>1589287037185</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1589287037185</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,7 +357,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add fonts" />
     <MESSAGE value="ajout du header" />
     <MESSAGE value="a lot a awesome stuff that i'm to lazy to describe" />
     <MESSAGE value="add image type" />
@@ -381,7 +381,8 @@
     <MESSAGE value="transform svg to true vector images (make image x10 smaller)" />
     <MESSAGE value="fix svg (add white outline)" />
     <MESSAGE value="adjust outline" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjust outline" />
+    <MESSAGE value="make filter more responsive on small devices&#10;implement counterlist logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="make filter more responsive on small devices&#10;implement counterlist logic" />
   </component>
   <component name="WindowStateProjectService">
     <state x="3036" y="218" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588250732195">
@@ -421,12 +422,12 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588146037939" />
-    <state x="470" y="191" key="Vcs.Push.Dialog.v2" timestamp="1589281979939">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1589287043057">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="392" y="158" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584097007025" />
     <state x="470" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589281979939" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588276079977" />
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589287043057" />
     <state x="2012" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1588271087549">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

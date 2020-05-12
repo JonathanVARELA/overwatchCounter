@@ -12,6 +12,12 @@
     background-color: #a86b12;
 }
 
+@media screen and (min-width: 800px) {
+    .main-filter > .return-button {
+        display: none !important;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .main-filter {
         position: fixed;
@@ -28,6 +34,15 @@
     }
 }
 
+@media screen and (max-width: 450px) {
+    .main-filter.character-selected > div {
+        justify-content: center !important;
+    }
+    .main-filter.character-selected > span{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 320px) {
     .main-filter > span {
         display: none;
@@ -38,8 +53,16 @@
     }
 
     .main-filter > div > .filter-icon {
-        margin-right: 2vw !important;
+        margin-right: 0 !important;
     }
+}
+
+.main-filter > .return-button {
+    display: none !important;
+}
+
+.main-filter.character-selected > .return-button {
+    display: flex !important;
 }
 
 .main-filter > span {
@@ -77,24 +100,28 @@
     margin: -3px 17px -3px -3px;
 }
 
-.main-filter > .scroll-up-button {
+.main-filter > .scroll-up-button,
+.main-filter > .return-button {
     background-color: #232323;
     align-self: stretch;
     display: flex;
     align-content: center;
     justify-content: center;
-    max-width: 120px;
+    max-width: 80px;
 }
 
-.main-filter > .scroll-up-button > img:hover {
+.main-filter > .scroll-up-button > img:hover,
+.main-filter > .return-button > img:hover {
     max-height: 51px;
     margin: 0 -3px 0 -3px;
 }
 
-.main-filter > .scroll-up-button > img {
+.main-filter > .scroll-up-button > img,
+.main-filter > .return-button > img {
     align-self: center;
     max-height: 45px;
 }
+
 
 .scroll-up-button > img {
     -webkit-transform: rotate(180deg);
@@ -102,7 +129,7 @@
     transform: rotate(180deg);
 }
 
-.scroll-left-button > img {
+.return-button > img {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     transform: rotate(90deg);

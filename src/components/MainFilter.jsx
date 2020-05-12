@@ -1,10 +1,11 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useContext, useEffect, useRef, useState} from 'react';
 import "./MainFilter.css"
 import typeDamageImage from "../images/damage.svg"
 import typeTankImage from "../images/tank.svg"
 import typeSupportImage from "../images/support.svg"
 import rightArrow from "../images/arrow.svg";
 import {animateScroll as scroll} from "react-scroll";
+import CharacterContext from "../CharacterContext";
 
 const MainFilter = ({characters, children}) => {
 
@@ -16,6 +17,8 @@ const MainFilter = ({characters, children}) => {
     let initialMainFilterContainerOffsetTop = -1;
 
     const [selectedFilters, setSelectedFilters] = useState({list: []});
+
+    const [selectedCharacter, setSelectedCharacter] = useContext(CharacterContext);
 
     const handleScroll = () => {
         if (window.innerWidth <= 801) return;
@@ -69,7 +72,11 @@ const MainFilter = ({characters, children}) => {
 
     return (
         <>
-            <div ref={ref} className={`main-filter sticky-wrapper${isSticky ? ' sticky' : ''}`}>
+            <div ref={ref}
+                 className={`main-filter sticky-wrapper${isSticky ? ' sticky' : ''} ${selectedCharacter ? "character-selected" : ""}`}>
+                <div className={"return-button"}>
+                    <img src={rightArrow} alt={"return"} onClick={() => setSelectedCharacter(null)}/>
+                </div>
                 <span>FILTERS</span>
                 <div>
                     <img className={"filter-icon " + (selectedFilters.list.includes("damage") ? "selected-filter" : "")}

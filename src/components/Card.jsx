@@ -5,6 +5,7 @@ import typeDamageImage from "../images/damage.svg"
 import typeTankImage from "../images/tank.svg"
 import typeSupportImage from "../images/support.svg"
 import useAudio from "../utils/AudioPlayer";
+import {animateScroll as scroll} from "react-scroll";
 
 const Card = ({avatar, name, type, sound}) => {
 
@@ -32,7 +33,7 @@ const Card = ({avatar, name, type, sound}) => {
 
     return (
         <div className={"card"} style={{backgroundImage: `url(${avatar})`}}
-             onClick={() => updateSelectedCharacter()}>
+             onClick={() => updateSelectedCharacter() & window.scrollTo(0, 0)}>
             <div className={"card-name"}>
                 <p>
                     {name}
