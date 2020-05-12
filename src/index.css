@@ -1,3 +1,28 @@
+@font-face {
+    font-family: bignoodletoo;
+    src: url("fonts/bignoodletoo.ttf");
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url("fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: RobotoCondensed-Bold;
+    src: url("fonts/RobotoCondensed-Bold.ttf");
+}
+
+@font-face {
+    font-family: RobotoCondensed-Regular;
+    src: url("fonts/RobotoCondensed-Regular.ttf");
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url("fonts/Montserrat-Bold.ttf");
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
