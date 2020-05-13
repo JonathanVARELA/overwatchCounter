@@ -1,3 +1,8 @@
+.counter-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .counter-filter {
     display: flex;
     flex-direction: row;
@@ -18,6 +23,7 @@
 
 .counter-filter > .strong-against {
 }
+
 .counter-filter > .strong-against div.selected > p,
 .counter-filter > .strong-against:hover > p,
 .counter-filter > .weak-against:hover > p {
@@ -25,13 +31,11 @@
 }
 
 .counter-filter > .strong-against.selected,
-.counter-filter > .weak-against.selected
-{
+.counter-filter > .weak-against.selected {
     background-color: #f99e1a !important;
 }
 
 .counter-filter > .strong-against,
-.counter-filter > .weak-against
-{
+.counter-filter > .weak-against {
     background-color: #a86b12;
 }

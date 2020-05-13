@@ -19,11 +19,14 @@ const FirebaseConnectionProvider = (props) => {
         await firebase.initializeApp(firebaseConfig);
     };
 
-    const connectToFirebase = () => {
-        initializeFirebase().then(() => setIsConnected(true))
-    };
-
-    useEffect(() => connectToFirebase(), []);
+    useEffect(() => {
+        if (!isConnected) {
+            const connectToFirebase = () => {
+                initializeFirebase().then(() => setIsConnected(true))
+            };
+            connectToFirebase()
+        }
+    });
 
     return (
         <>

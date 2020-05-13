@@ -1,11 +1,10 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useContext} from 'react';
 import "./Card.css"
 import CharacterContext from './../CharacterContext'
 import typeDamageImage from "../images/damage.svg"
 import typeTankImage from "../images/tank.svg"
 import typeSupportImage from "../images/support.svg"
 import useAudio from "../utils/AudioPlayer";
-import {animateScroll as scroll} from "react-scroll";
 
 const Card = ({avatar, name, type, sound}) => {
 

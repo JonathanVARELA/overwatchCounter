@@ -3,7 +3,7 @@ import "./CardList.css"
 import CounterCard from "./CounterCard";
 import CharacterContext from "../CharacterContext";
 
-const CounterList = ({characters}) => {
+const CounterList = ({characters, isStrongAgainstSelected}) => {
 
     const [selectedCharacter,] = useContext(CharacterContext);
 
@@ -17,7 +17,8 @@ const CounterList = ({characters}) => {
                             key: `${selectedCharacter}_${character}-${i}`,
                             index : i,
                             selectedCharacter: selectedCharacter,
-                            currentCounterCharacter: character
+                            currentCounterCharacter: character,
+                            isStrongAgainstSelected: isStrongAgainstSelected
                         }
                     )
                 )

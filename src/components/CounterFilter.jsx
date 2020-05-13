@@ -1,7 +1,8 @@
-import React, {useContext, useEffect, useRef, useState} from 'react';
+import React, {useCallback, useContext, useEffect, useRef, useState} from 'react';
 import "./CounterFilter.css"
 import CharacterContext from "../CharacterContext";
-import * as firebase from "firebase";
+import firebase from 'firebase/app';
+import 'firebase/firestore';
 
 const CounterFilter = ({characters, children}) => {
 
@@ -17,15 +18,15 @@ const CounterFilter = ({characters, children}) => {
 
     const isStrongAgainstSelected = useRef(true);
 
-    const getScores = async () => {
+    const getScores = useCallback(() => {
         const db = firebase.firestore();
-        return await db.collection("counters")
+        return db.collection("counters")
             .where("leftCharacter", "==", selectedCharacter.name)
             .get()
             .then(snapshot => snapshot.docs.map(doc => doc.data()));
-    };
+    }, [selectedCharacter.name]);
 
-    const getFiltredCharacter = async (sortOrder) => {
+    const getFilteredCharacter = useCallback((sortOrder) => {
         const getCharacterWithScore = async () =>
             getScores()
                 .then(scores => {
@@ -36,12 +37,12 @@ const CounterFilter = ({characters, children}) => {
                     }
                     return charactersWithScore;
                 });
-        return await getCharacterWithScore()
+        return getCharacterWithScore()
             .then(charactersWithScores => charactersWithScores.sort((a, b) => (a.score - b.score) * sortOrder))
-    }
+    }, [characters, getScores, selectedCharacter.name])
 
     const filterCharacters = async (sortOrder) => {
-        getFiltredCharacter(sortOrder)
+        getFilteredCharacter(sortOrder)
             .then(result => {
                 if (isMountedRef.current) {
                     setFilteredCharacters(result)
@@ -53,14 +54,14 @@ const CounterFilter = ({characters, children}) => {
         isMountedRef.current = true;
 
         if (!initialized.current && selectedCharacter) {
-            getFiltredCharacter(-1).then(result => {
+            getFilteredCharacter(-1).then(result => {
                 if (isMountedRef.current) {
                     setFilteredCharacters(result)
                 }
             });
             initialized.current = true;
         } else if (!wasSelectedCharacter.current && selectedCharacter) {
-            getFiltredCharacter(-1).then(result => {
+            getFilteredCharacter(-1).then(result => {
                 if (isMountedRef.current) {
                     setFilteredCharacters(result)
                 }
@@ -69,10 +70,10 @@ const CounterFilter = ({characters, children}) => {
         wasSelectedCharacter.current = selectedCharacter != null;
 
         return () => isMountedRef.current = false;
-    }, [filterCharacters, getFiltredCharacter, selectedCharacter])
+    }, [getFilteredCharacter, selectedCharacter])
 
     return (
-        <>
+        <div className={"counter-container"}>
             {
                 selectedCharacter
                     ?
@@ -100,12 +101,15 @@ const CounterFilter = ({characters, children}) => {
             }
             {
                 characters
-                    ? React.Children.toArray(children).map(child =>
-                        React.cloneElement(child, {characters: (selectedCharacter ? filteredCharacters : characters)})
+                    ? React.Children.toArray(children).map((child) =>
+                        React.cloneElement(child, {
+                            characters: (selectedCharacter ? filteredCharacters : characters),
+                            isStrongAgainstSelected: isStrongAgainstSelected,
+                        })
                     )
                     : <></>
             }
-        </>
+        </div>
     )
 };
 

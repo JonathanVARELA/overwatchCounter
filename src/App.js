@@ -25,12 +25,12 @@ function App() {
                     <Header/>
                     <SelectedCharacterCard/>
                     <CharacterListProvider>
-                        <CounterFilter>
-                            <MainFilter>
-                                <CardList/>
+                        <MainFilter>
+                            <CardList/>
+                            <CounterFilter>
                                 <CounterList/>
-                            </MainFilter>
-                        </CounterFilter>
+                            </CounterFilter>
+                        </MainFilter>
                     </CharacterListProvider>
                 </CharacterContext.Provider>
             </FirebaseConnectionProvider>

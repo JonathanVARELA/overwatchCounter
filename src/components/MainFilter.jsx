@@ -14,25 +14,12 @@ const MainFilter = ({characters, children}) => {
     const [isSticky, setSticky] = useState(false);
 
     const ref = useRef(null);
-    let initialMainFilterContainerOffsetTop = -1;
+    const initialMainFilterContainerOffsetTop = useRef(-1);
 
     const [selectedFilters, setSelectedFilters] = useState({list: []});
 
     const [selectedCharacter, setSelectedCharacter] = useContext(CharacterContext);
 
-    const handleScroll = () => {
-        if (window.innerWidth <= 801) return;
-        if (ref.current) {
-            if (initialMainFilterContainerOffsetTop === -1) {
-                initialMainFilterContainerOffsetTop = ref.current.offsetTop
-            }
-            if (window.pageYOffset >= initialMainFilterContainerOffsetTop) {
-                setSticky(true);
-            } else {
-                setSticky(false);
-            }
-        }
-    };
 
     const filterCharacters = (type) => {
         scroll.scrollToTop();
@@ -64,6 +51,19 @@ const MainFilter = ({characters, children}) => {
         }
         filterCharacters()
 
+        const handleScroll = () => {
+            if (window.innerWidth <= 801) return;
+            if (ref.current) {
+                if (initialMainFilterContainerOffsetTop.current === -1) {
+                    initialMainFilterContainerOffsetTop.current = ref.current.offsetTop
+                }
+                if (window.pageYOffset >= initialMainFilterContainerOffsetTop.current) {
+                    setSticky(true);
+                } else {
+                    setSticky(false);
+                }
+            }
+        };
         window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', () => handleScroll);
@@ -96,13 +96,13 @@ const MainFilter = ({characters, children}) => {
                 </div>
             </div>
             <div id={"main-container"}>
-            {
-                characters
-                    ? React.Children
-                        .toArray(children)
-                        .map(child => React.cloneElement(child, {characters: filteredCharacters}))
-                    : <></>
-            }
+                {
+                    characters
+                        ? React.Children
+                            .toArray(children)
+                            .map(child => React.cloneElement(child, {characters: filteredCharacters}))
+                        : <></>
+                }
             </div>
         </>
     )

@@ -24,7 +24,11 @@ const CharacterListProvider = (props) => {
             .then(characters => setCharacters(characters));
     };
 
-    useEffect(() => fetchCharacters(), []);
+    useEffect(() => {
+        if (!characters) {
+            fetchCharacters()
+        }
+    });
 
     return (
         <>
