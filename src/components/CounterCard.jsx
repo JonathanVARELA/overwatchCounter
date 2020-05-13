@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import "./CounterCard.css"
 import * as firebase from "firebase";
 import typeDamageImage from "../images/damage.svg";
@@ -8,9 +8,7 @@ import counterArrow from "../images/counter-arrow.svg";
 
 const CounterCard = ({index, selectedCharacter, currentCounterCharacter}) => {
 
-
-    const [score, setScore] = useState([]);
-
+    const [score, setScore] = useState(currentCounterCharacter.score);
     const db = firebase.firestore();
 
     const getScore = async () => {
@@ -45,8 +43,6 @@ const CounterCard = ({index, selectedCharacter, currentCounterCharacter}) => {
 
         fetchCounters();
     };
-
-    useEffect(() => fetchCounters(), [fetchCounters]);
 
     const getTypeImage = () => {
         switch (currentCounterCharacter.type) {

@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import DiscoverMore from "./components/DiscoverMore";
 import CharacterCounterModal from "./components/CharacterCounterModal";
 import SelectedCharacterCard from "./components/SelectedCharacterCard";
+import CounterFilter from "./components/CounterFilter";
 
 function App() {
 
@@ -24,10 +25,12 @@ function App() {
                     <Header/>
                     <SelectedCharacterCard/>
                     <CharacterListProvider>
-                        <MainFilter>
-                            <CardList/>
-                            <CounterList/>
-                        </MainFilter>
+                        <CounterFilter>
+                            <MainFilter>
+                                <CardList/>
+                                <CounterList/>
+                            </MainFilter>
+                        </CounterFilter>
                     </CharacterListProvider>
                 </CharacterContext.Provider>
             </FirebaseConnectionProvider>

@@ -1,0 +1,37 @@
+.counter-filter {
+    display: flex;
+    flex-direction: row;
+    min-height: 6vh;
+    align-content: center;
+}
+
+.counter-filter > div {
+    display: flex;
+    max-width: 50vw;
+    flex-grow: 1;
+    align-content: center;
+    justify-content: center;
+    font-family: RobotoCondensed-Regular, sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+.counter-filter > .strong-against {
+}
+.counter-filter > .strong-against div.selected > p,
+.counter-filter > .strong-against:hover > p,
+.counter-filter > .weak-against:hover > p {
+    font-size: 1.1rem;
+}
+
+.counter-filter > .strong-against.selected,
+.counter-filter > .weak-against.selected
+{
+    background-color: #f99e1a !important;
+}
+
+.counter-filter > .strong-against,
+.counter-filter > .weak-against
+{
+    background-color: #a86b12;
+}
