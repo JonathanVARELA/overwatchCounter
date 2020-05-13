@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import * as firebase from "firebase";
+import firebase from 'firebase/app';
 
 const FirebaseConnectionProvider = (props) => {
 

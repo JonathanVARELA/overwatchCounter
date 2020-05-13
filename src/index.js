@@ -3,11 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import './fonts/bignoodletoo.ttf'
-import './fonts/Montserrat-Bold.ttf'
-import './fonts/Montserrat-Regular.ttf'
-import './fonts/RobotoCondensed-Bold.ttf'
-import './fonts/RobotoCondensed-Regular.ttf'
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

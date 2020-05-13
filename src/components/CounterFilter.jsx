@@ -21,9 +21,9 @@ const CounterFilter = ({characters, children}) => {
     const getScores = useCallback(() => {
         const db = firebase.firestore();
         return db.collection("counters")
-            .where("leftCharacter", "==", selectedCharacter.name)
             .get()
-            .then(snapshot => snapshot.docs.map(doc => doc.data()));
+            .then(snapshot => snapshot.docs.map(doc => doc.data()))
+            .filter(score => score.leftCharacter === selectedCharacter.name);
     }, [selectedCharacter.name]);
 
     const getFilteredCharacter = useCallback((sortOrder) => {
