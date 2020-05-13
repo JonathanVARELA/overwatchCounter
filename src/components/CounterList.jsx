@@ -15,6 +15,7 @@ const CounterList = ({characters}) => {
                         CounterCard,
                         {
                             key: `${selectedCharacter}_${character}-${i}`,
+                            index : i,
                             selectedCharacter: selectedCharacter,
                             currentCounterCharacter: character
                         }
