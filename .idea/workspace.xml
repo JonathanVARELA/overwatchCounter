@@ -32,12 +32,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="add selectedCharacter component">
+    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="create counter list cards">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CounterCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterCard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CounterCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CounterList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainFilter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainFilter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainFilter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainFilter.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +119,7 @@
       <workItem from="1588272413835" duration="4270000" />
       <workItem from="1588580754237" duration="767000" />
       <workItem from="1589275656737" duration="16581000" />
-      <workItem from="1589353357408" duration="5569000" />
+      <workItem from="1589353357408" duration="5894000" />
     </task>
     <task id="LOCAL-00001" summary="add firestore connection&#10;create card component&#10;create card list component&#10;load characters from firestore&#10;display characters (POC)">
       <created>1584009645712</created>
@@ -354,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589297077875</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="create counter list cards">
+      <created>1589359126012</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1589359126012</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,7 +378,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add image type" />
     <MESSAGE value="sticky filter" />
     <MESSAGE value="add discover more" />
     <MESSAGE value="better responsive" />
@@ -398,7 +402,8 @@
     <MESSAGE value="make filter more responsive on small devices&#10;implement counterlist logic" />
     <MESSAGE value="add return button when a character is selected" />
     <MESSAGE value="add selectedCharacter component" />
-    <option name="LAST_COMMIT_MESSAGE" value="add selectedCharacter component" />
+    <MESSAGE value="create counter list cards" />
+    <option name="LAST_COMMIT_MESSAGE" value="create counter list cards" />
   </component>
   <component name="WindowStateProjectService">
     <state x="3036" y="218" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588250732195">
@@ -438,12 +443,12 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588146037939" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1589297082065">
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1589359131615">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="392" y="158" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584097007025" />
     <state x="470" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589281979939" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589297082065" />
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589359131615" />
     <state x="2012" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1588271087549">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
