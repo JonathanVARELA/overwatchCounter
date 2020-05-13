@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useState} from 'react';
 import "./CardList.css"
 import CounterCard from "./CounterCard";
 import CharacterContext from "../CharacterContext";
@@ -6,6 +6,10 @@ import CharacterContext from "../CharacterContext";
 const CounterList = ({characters, isStrongAgainstSelected}) => {
 
     const [selectedCharacter,] = useContext(CharacterContext);
+
+    const useForceUpdate = () => useState()[1];
+
+    const forceUpdate = useForceUpdate();
 
     return (
         <div id={"counterList"} className={selectedCharacter ? "character-selected" : ""}>
@@ -18,7 +22,8 @@ const CounterList = ({characters, isStrongAgainstSelected}) => {
                             index : i,
                             selectedCharacter: selectedCharacter,
                             currentCounterCharacter: character,
-                            isStrongAgainstSelected: isStrongAgainstSelected
+                            isStrongAgainstSelected: isStrongAgainstSelected,
+                            forceUpdate: forceUpdate
                         }
                     )
                 )

@@ -8,7 +8,7 @@ import counterArrow from "../images/counter-arrow.svg";
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 
-const CounterCard = ({index, selectedCharacter, currentCounterCharacter, isStrongAgainstSelected}) => {
+const CounterCard = ({index, selectedCharacter, currentCounterCharacter, isStrongAgainstSelected, forceUpdate}) => {
 
     const db = firebase.firestore();
 
@@ -28,6 +28,7 @@ const CounterCard = ({index, selectedCharacter, currentCounterCharacter, isStron
                 leftCharacter: currentCounterCharacter.name,
                 score: currentCounterCharacter.score - score
             }, {merge: true});
+        forceUpdate();
     };
 
     const getTypeImage = () => {

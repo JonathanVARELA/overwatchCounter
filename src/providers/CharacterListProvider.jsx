@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import "../components/CardList.css"
-import * as firebase from "firebase";
+import * as firebase from "firebase/app";
 
 const CharacterListProvider = (props) => {
 
