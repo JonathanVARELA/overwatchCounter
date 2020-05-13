@@ -32,20 +32,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="(mobile only) add counter sorting">
+    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="fix console warnings">
       <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/images/black-counter-arrow.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CounterCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterCard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CounterCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CounterFilter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterFilter.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CounterFilter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterFilter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CounterList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainFilter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainFilter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/providers/CharacterListProvider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/CharacterListProvider.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/providers/FirebaseConnectionProvider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/FirebaseConnectionProvider.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +123,7 @@
       <workItem from="1588272413835" duration="4270000" />
       <workItem from="1588580754237" duration="767000" />
       <workItem from="1589275656737" duration="16581000" />
-      <workItem from="1589353357408" duration="35871000" />
+      <workItem from="1589353357408" duration="36956000" />
     </task>
     <task id="LOCAL-00001" summary="add firestore connection&#10;create card component&#10;create card list component&#10;load characters from firestore&#10;display characters (POC)">
       <created>1584009645712</created>
@@ -393,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589383143423</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="fix console warnings">
+      <created>1589393336854</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1589393336854</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -412,7 +410,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="better responsive v2" />
     <MESSAGE value="almost it !" />
     <MESSAGE value="fix svg on chrome" />
     <MESSAGE value="make sound play only once" />
@@ -437,7 +434,8 @@
     <MESSAGE value="fix build error" />
     <MESSAGE value="add missing files" />
     <MESSAGE value="(mobile only) add counter sorting" />
-    <option name="LAST_COMMIT_MESSAGE" value="(mobile only) add counter sorting" />
+    <MESSAGE value="fix console warnings" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix console warnings" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2744" y="418" key="#ESLint" timestamp="1589381004186">
@@ -457,36 +455,36 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="423" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1584097004494" />
-    <state width="1899" height="135" key="GridCell.Tab.0.bottom" timestamp="1589383156715">
+    <state width="1899" height="135" key="GridCell.Tab.0.bottom" timestamp="1589394302705">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="778" height="208" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1584083350355" />
-    <state width="1899" height="135" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589383156715" />
-    <state width="1899" height="135" key="GridCell.Tab.0.center" timestamp="1589383156715">
+    <state width="1899" height="135" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589394302705" />
+    <state width="1899" height="135" key="GridCell.Tab.0.center" timestamp="1589394302704">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="778" height="208" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1584083350355" />
-    <state width="1899" height="135" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589383156715" />
-    <state width="1899" height="135" key="GridCell.Tab.0.left" timestamp="1589383156714">
+    <state width="1899" height="135" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589394302704" />
+    <state width="1899" height="135" key="GridCell.Tab.0.left" timestamp="1589394302704">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="778" height="208" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1584083350355" />
-    <state width="1899" height="135" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589383156714" />
-    <state width="1899" height="135" key="GridCell.Tab.0.right" timestamp="1589383156715">
+    <state width="1899" height="135" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589394302704" />
+    <state width="1899" height="135" key="GridCell.Tab.0.right" timestamp="1589394302704">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="778" height="208" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1584083350355" />
-    <state width="1899" height="135" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589383156715" />
+    <state width="1899" height="135" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589394302704" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1588146037939">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588146037939" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1589383147955">
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1589393338691">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="392" y="158" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584097007025" />
     <state x="470" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589281979939" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589383147955" />
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589393338691" />
     <state x="2012" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589379101531">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -499,20 +497,20 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="433" y="0" width="1397" height="900" key="dock-window-1/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589355559000" />
-    <state x="2503" y="177" width="753" height="687" key="find.popup" timestamp="1589393278692">
+    <state x="2503" y="177" width="753" height="687" key="find.popup" timestamp="1589394190770">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="486" y="146" width="627" height="568" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1584093344682" />
     <state x="583" y="177" width="753" height="687" key="find.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589391510967" />
-    <state x="2503" y="177" width="753" height="687" key="find.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589393278692" />
+    <state x="2503" y="177" width="753" height="687" key="find.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589394190770" />
     <state x="2536" y="250" key="run.anything.popup" timestamp="1589286649457">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2536" y="250" key="run.anything.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589286649457" />
-    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1589393107588">
+    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1589394150753">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589391501115" />
-    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589393107588" />
+    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589394150753" />
   </component>
 </project>

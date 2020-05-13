@@ -3,8 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@react-firebase/auth": "^0.2.10",
-    "@react-firebase/firestore": "^0.5.5",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -12,7 +10,6 @@
     "react": "^16.13.0",
     "react-animated-list": "^0.1.4",
     "react-dom": "^16.13.0",
-    "react-firebase-hooks": "^2.1.1",
     "react-scripts": "3.4.0",
     "react-scroll": "^1.7.16"
   },
