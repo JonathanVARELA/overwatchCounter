@@ -62,7 +62,6 @@ const CounterFilter = ({characters, children}) => {
             .onSnapshot(
                 () => {
                     if (!selectedCharacter) return;
-                    console.log("counter changed")
                     filterCharacters();
                 },
                 (error) => console.error(error)
