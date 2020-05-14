@@ -26,7 +26,7 @@ const CounterCard = ({index, selectedCharacter, currentCounterCharacter}) => {
             .set({
                 rightCharacter: selectedCharacter.name,
                 leftCharacter: currentCounterCharacter.name,
-                score: score
+                score: -score
             }, {merge: true});
     };
 

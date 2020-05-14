@@ -19,7 +19,7 @@ const CounterFilter = ({characters}) => {
 
     const isStrongAgainstSelected = useRef(true);
 
-    const sortOrder = useRef(1);
+    const sortOrder = useRef(-1);
 
     const getScores = useCallback(() => {
         if (!selectedCharacter) return [];
@@ -38,6 +38,7 @@ const CounterFilter = ({characters}) => {
             getScores()
                 .then(scores => {
                     const charactersWithScore = [];
+                    console.log(scores);
                     for (const character of [...characters]) {
                         if (character.name === selectedCharacter.name) continue;
                         charactersWithScore.push({score: scores.find(score => score.rightCharacter === character.name)?.score || 0, ...character})
@@ -83,7 +84,7 @@ const CounterFilter = ({characters}) => {
                 });
             initialized.current = true;
         } else if (!wasSelectedCharacter.current && selectedCharacter) {
-            sortOrder.current = 1;
+            sortOrder.current = -1;
             getFilteredCharacter()
                 .then(result => {
                     if (isMountedRef.current) {

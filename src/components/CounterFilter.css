@@ -28,6 +28,7 @@
 .counter-filter > .strong-against:hover > p,
 .counter-filter > .weak-against:hover > p {
     font-size: 1.1rem;
+    margin: .9rem 0 .9rem 0;
 }
 
 .counter-filter > .strong-against.selected,

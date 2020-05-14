@@ -32,15 +32,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="remove useless props">
+    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="change main filter beavhior to make it work on desktop version">
       <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/images/black-counter-arrow.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CounterCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CounterFilter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterFilter.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CounterFilter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterFilter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CounterList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainFilter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainFilter.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,14 +126,7 @@
       <workItem from="1588272413835" duration="4270000" />
       <workItem from="1588580754237" duration="767000" />
       <workItem from="1589275656737" duration="16581000" />
-      <workItem from="1589353357408" duration="55850000" />
-    </task>
-    <task id="LOCAL-00002" summary="Add characters sound on click">
-      <created>1584017397652</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1584017397652</updated>
+      <workItem from="1589353357408" duration="56801000" />
     </task>
     <task id="LOCAL-00003" summary="Add selectedCharacter context&#10;create firebase connection provider component&#10;create character list provider component">
       <created>1584088165425</created>
@@ -473,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589448726044</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="change main filter beavhior to make it work on desktop version">
+      <created>1589454527789</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1589454527789</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,7 +490,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="small fix" />
     <MESSAGE value="ok, now it's fixed ! (i hope )" />
     <MESSAGE value="transform svg to true vector images (make image x10 smaller)" />
     <MESSAGE value="fix svg (add white outline)" />
@@ -517,7 +514,8 @@
     <MESSAGE value="fix counter card update" />
     <MESSAGE value="fix wrong list order after update when weak against is selected" />
     <MESSAGE value="remove useless props" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove useless props" />
+    <MESSAGE value="change main filter beavhior to make it work on desktop version" />
+    <option name="LAST_COMMIT_MESSAGE" value="change main filter beavhior to make it work on desktop version" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2744" y="418" key="#ESLint" timestamp="1589381004186">
@@ -562,12 +560,12 @@
     </state>
     <state x="461" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588146037939" />
     <state x="2381" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589396798418" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1589448727293">
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1589454529215">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="392" y="158" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584097007025" />
     <state x="470" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589396298866" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589448727293" />
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589454529215" />
     <state x="2012" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589379101531">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
