@@ -18,7 +18,7 @@ const CounterFilter = ({characters, children}) => {
 
     const isStrongAgainstSelected = useRef(true);
 
-    const sortOrder = useState(1);
+    const sortOrder = useRef(1);
 
     const getScores = useCallback(() => {
         if (!selectedCharacter) return [];
@@ -61,7 +61,7 @@ const CounterFilter = ({characters, children}) => {
             .collection("counters")
             .onSnapshot(
                 () => {
-                    if (!selectedCharacter) return;
+                    if (!selectedCharacter || !isMountedRef.current) return;
                     filterCharacters();
                 },
                 (error) => console.error(error)
