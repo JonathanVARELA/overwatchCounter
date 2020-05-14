@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import "./CounterCard.css"
 import typeDamageImage from "../images/damage.svg";
 import typeSupportImage from "../images/support.svg";

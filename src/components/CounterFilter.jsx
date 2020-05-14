@@ -3,8 +3,9 @@ import "./CounterFilter.css"
 import CharacterContext from "../CharacterContext";
 import firebase from 'firebase/app';
 import 'firebase/firestore';
+import CounterList from "./CounterList";
 
-const CounterFilter = ({characters, children}) => {
+const CounterFilter = ({characters}) => {
 
     const [filteredCharacters, setFilteredCharacters] = useState([]);
 
@@ -100,37 +101,31 @@ const CounterFilter = ({characters, children}) => {
             {
                 selectedCharacter
                     ?
-                    <div className={"counter-filter"}>
-                        <div className={"strong-against " + (isStrongAgainstSelected.current ? "selected" : "")}
-                             onClick={() => {
-                                 isStrongAgainstSelected.current = true;
-                                 sortOrder.current = -1;
-                                 filterCharacters();
-                             }}>
-                            <p>
-                                Strong against
-                            </p>
+                    <>
+                        <div className={"counter-filter"}>
+                            <div className={"strong-against " + (isStrongAgainstSelected.current ? "selected" : "")}
+                                 onClick={() => {
+                                     isStrongAgainstSelected.current = true;
+                                     sortOrder.current = -1;
+                                     filterCharacters();
+                                 }}>
+                                <p>
+                                    Strong against
+                                </p>
+                            </div>
+                            <div className={"weak-against " + (!isStrongAgainstSelected.current ? "selected" : "")}
+                                 onClick={() => {
+                                     isStrongAgainstSelected.current = false;
+                                     sortOrder.current = 1;
+                                     filterCharacters();
+                                 }}>
+                                <p>
+                                    Weak against
+                                </p>
+                            </div>
                         </div>
-                        <div className={"weak-against " + (!isStrongAgainstSelected.current ? "selected" : "")}
-                             onClick={() => {
-                                 isStrongAgainstSelected.current = false;
-                                 sortOrder.current = 1;
-                                 filterCharacters();
-                             }}>
-                            <p>
-                                Weak against
-                            </p>
-                        </div>
-                    </div>
-                    : <></>
-            }
-            {
-                characters
-                    ? React.Children.toArray(children).map((child) =>
-                        React.cloneElement(child, {
-                            characters: (selectedCharacter ? filteredCharacters : characters)
-                        })
-                    )
+                        <CounterList characters={filteredCharacters}/>
+                    </>
                     : <></>
             }
         </div>

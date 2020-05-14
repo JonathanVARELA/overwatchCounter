@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useRef, useState} from 'react';
+import React, {useCallback, useContext, useEffect, useRef, useState} from 'react';
 import "./MainFilter.css"
 import typeDamageImage from "../images/damage.svg"
 import typeTankImage from "../images/tank.svg"
@@ -6,8 +6,10 @@ import typeSupportImage from "../images/support.svg"
 import rightArrow from "../images/arrow.svg";
 import {animateScroll as scroll} from "react-scroll";
 import CharacterContext from "../CharacterContext";
+import CardList from "./CardList";
+import CounterFilter from "./CounterFilter";
 
-const MainFilter = ({characters, children}) => {
+const MainFilter = ({characters}) => {
 
     const [filteredCharacters, setFilteredCharacters] = useState();
 
@@ -20,8 +22,7 @@ const MainFilter = ({characters, children}) => {
 
     const [selectedCharacter, setSelectedCharacter] = useContext(CharacterContext);
 
-
-    const filterCharacters = (type) => {
+    const filterCharacters = useCallback((type) => {
         scroll.scrollToTop();
         let filter = [];
         if (selectedFilters.list.includes(type)) {
@@ -43,7 +44,7 @@ const MainFilter = ({characters, children}) => {
 
         setFilteredCharacters(characters.filter(character => filter.includes(character.type)));
         setSelectedFilters({list: filter});
-    }
+    }, [characters, selectedFilters.list]);
 
     useEffect(() => {
         const filterCharacters = () => {
@@ -95,15 +96,8 @@ const MainFilter = ({characters, children}) => {
                     <img src={rightArrow} alt={"scroll up"} onClick={() => scroll.scrollToTop()}/>
                 </div>
             </div>
-            <div id={"main-container"}>
-                {
-                    characters
-                        ? React.Children
-                            .toArray(children)
-                            .map(child => React.cloneElement(child, {characters: filteredCharacters}))
-                        : <></>
-                }
-            </div>
+            <CardList characters={selectedCharacter ? characters : filteredCharacters}/>
+            <CounterFilter key={filteredCharacters} characters={filteredCharacters}/>
         </>
     )
 };
