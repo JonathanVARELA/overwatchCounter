@@ -19,14 +19,18 @@ const CounterFilter = ({characters, children}) => {
     const isStrongAgainstSelected = useRef(true);
 
     const getScores = useCallback(() => {
+        if (!selectedCharacter) return [];
+
         const db = firebase.firestore();
         return db.collection("counters")
             .get()
             .then(snapshot => snapshot.docs.map(doc => doc.data()))
-            .filter(score => score.leftCharacter === selectedCharacter.name);
-    }, [selectedCharacter.name]);
+            .then(scores => scores.filter(score => score.leftCharacter === selectedCharacter.name));
+    }, [selectedCharacter]);
 
     const getFilteredCharacter = useCallback((sortOrder) => {
+        if (!selectedCharacter) return [];
+
         const getCharacterWithScore = async () =>
             getScores()
                 .then(scores => {
@@ -39,7 +43,7 @@ const CounterFilter = ({characters, children}) => {
                 });
         return getCharacterWithScore()
             .then(charactersWithScores => charactersWithScores.sort((a, b) => (a.score - b.score) * sortOrder))
-    }, [characters, getScores, selectedCharacter.name])
+    }, [characters, getScores, selectedCharacter])
 
     const filterCharacters = async (sortOrder) => {
         getFilteredCharacter(sortOrder)
