@@ -18,6 +18,8 @@ const CounterFilter = ({characters, children}) => {
 
     const isStrongAgainstSelected = useRef(true);
 
+    const sortOrder = useRef(1);
+
     const getScores = useCallback(() => {
         if (!selectedCharacter) return [];
 
@@ -28,7 +30,7 @@ const CounterFilter = ({characters, children}) => {
             .then(scores => scores.filter(score => score.leftCharacter === selectedCharacter.name));
     }, [selectedCharacter]);
 
-    const getFilteredCharacter = useCallback((sortOrder) => {
+    const getFilteredCharacter = useCallback(() => {
         if (!selectedCharacter) return [];
 
         const getCharacterWithScore = async () =>
@@ -45,8 +47,8 @@ const CounterFilter = ({characters, children}) => {
             .then(charactersWithScores => charactersWithScores.sort((a, b) => (a.score - b.score) * sortOrder))
     }, [characters, getScores, selectedCharacter])
 
-    const filterCharacters = async (sortOrder) => {
-        getFilteredCharacter(sortOrder)
+    const filterCharacters = async () => {
+        getFilteredCharacter()
             .then(result => {
                 if (isMountedRef.current) {
                     setFilteredCharacters(result)
@@ -54,22 +56,40 @@ const CounterFilter = ({characters, children}) => {
             });
     }
 
+    const listenForScores = useCallback(() => {
+        firebase.firestore()
+            .collection("counters")
+            .onSnapshot(
+                () => {
+                    if (!selectedCharacter) return;
+                    console.log("counter changed")
+                    filterCharacters();
+                },
+                (error) => console.error(error)
+            );
+    }, [filterCharacters, selectedCharacter]);
+
     useEffect(() => {
         isMountedRef.current = true;
 
         if (!initialized.current && selectedCharacter) {
-            getFilteredCharacter(-1).then(result => {
-                if (isMountedRef.current) {
-                    setFilteredCharacters(result)
-                }
-            });
+            listenForScores();
+            sortOrder.current = -1;
+            getFilteredCharacter()
+                .then(result => {
+                    if (isMountedRef.current) {
+                        setFilteredCharacters(result)
+                    }
+                });
             initialized.current = true;
         } else if (!wasSelectedCharacter.current && selectedCharacter) {
-            getFilteredCharacter(-1).then(result => {
-                if (isMountedRef.current) {
-                    setFilteredCharacters(result)
-                }
-            });
+            sortOrder.current = 1;
+            getFilteredCharacter()
+                .then(result => {
+                    if (isMountedRef.current) {
+                        setFilteredCharacters(result)
+                    }
+                });
         }
         wasSelectedCharacter.current = selectedCharacter != null;
 
@@ -85,7 +105,8 @@ const CounterFilter = ({characters, children}) => {
                         <div className={"strong-against " + (isStrongAgainstSelected.current ? "selected" : "")}
                              onClick={() => {
                                  isStrongAgainstSelected.current = true;
-                                 filterCharacters(-1);
+                                 sortOrder.current = -1;
+                                 filterCharacters();
                              }}>
                             <p>
                                 Strong against
@@ -94,7 +115,8 @@ const CounterFilter = ({characters, children}) => {
                         <div className={"weak-against " + (!isStrongAgainstSelected.current ? "selected" : "")}
                              onClick={() => {
                                  isStrongAgainstSelected.current = false;
-                                 filterCharacters(1);
+                                 sortOrder.current = 1;
+                                 filterCharacters();
                              }}>
                             <p>
                                 Weak against
