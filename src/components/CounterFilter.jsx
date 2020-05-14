@@ -101,7 +101,7 @@ const CounterFilter = ({characters}) => {
     const counterContainerRef = useRef();
     useEffect(() => {
         const handleScroll = () => {
-            if (window.innerWidth <= 801 || window.pageYOffset > 50 || counterContainerRef.current?.style?.marginTop == null) {
+            if (window.innerWidth <= 801 || window.pageYOffset > 40 || counterContainerRef.current?.style?.marginTop == null) {
                 return;
             }
             counterContainerRef.current.style.marginTop = -window.pageYOffset + "px";
