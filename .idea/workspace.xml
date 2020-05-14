@@ -32,14 +32,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="reduce firestore read operations">
+    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="remove useless imports">
       <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/characters.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/images/black-counter-arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/offlineData/characters.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CounterCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CounterList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/providers/CharacterListProvider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/CharacterListProvider.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +125,7 @@
       <workItem from="1588272413835" duration="4270000" />
       <workItem from="1588580754237" duration="767000" />
       <workItem from="1589275656737" duration="16581000" />
-      <workItem from="1589353357408" duration="41237000" />
+      <workItem from="1589353357408" duration="42922000" />
     </task>
     <task id="LOCAL-00001" summary="add firestore connection&#10;create card component&#10;create card list component&#10;load characters from firestore&#10;display characters (POC)">
       <created>1584009645712</created>
@@ -410,7 +407,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589396297052</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="remove useless imports">
+      <created>1589398816617</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1589398816617</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,7 +433,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="make sound play only once" />
     <MESSAGE value="pretty scrollbar" />
     <MESSAGE value="add filter" />
     <MESSAGE value="put filter bar to bottom when on mobile" />
@@ -454,7 +457,8 @@
     <MESSAGE value="fix console warnings" />
     <MESSAGE value="remove useless dependencies" />
     <MESSAGE value="reduce firestore read operations" />
-    <option name="LAST_COMMIT_MESSAGE" value="reduce firestore read operations" />
+    <MESSAGE value="remove useless imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove useless imports" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2744" y="418" key="#ESLint" timestamp="1589381004186">
@@ -474,37 +478,37 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="423" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1584097004494" />
-    <state width="1899" height="303" key="GridCell.Tab.0.bottom" timestamp="1589398605581">
+    <state width="1899" height="303" key="GridCell.Tab.0.bottom" timestamp="1589398746044">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="778" height="208" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1584083350355" />
-    <state width="1899" height="303" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589398605581" />
-    <state width="1899" height="303" key="GridCell.Tab.0.center" timestamp="1589398605581">
+    <state width="1899" height="303" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589398746044" />
+    <state width="1899" height="303" key="GridCell.Tab.0.center" timestamp="1589398746043">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="778" height="208" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1584083350355" />
-    <state width="1899" height="303" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589398605581" />
-    <state width="1899" height="303" key="GridCell.Tab.0.left" timestamp="1589398605581">
+    <state width="1899" height="303" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589398746043" />
+    <state width="1899" height="303" key="GridCell.Tab.0.left" timestamp="1589398746043">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="778" height="208" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1584083350355" />
-    <state width="1899" height="303" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589398605581" />
-    <state width="1899" height="303" key="GridCell.Tab.0.right" timestamp="1589398605581">
+    <state width="1899" height="303" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589398746043" />
+    <state width="1899" height="303" key="GridCell.Tab.0.right" timestamp="1589398746043">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="778" height="208" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1584083350355" />
-    <state width="1899" height="303" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589398605581" />
+    <state width="1899" height="303" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589398746043" />
     <state x="2381" y="164" key="SettingsEditor" timestamp="1589396798418">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588146037939" />
     <state x="2381" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589396798418" />
-    <state x="470" y="191" key="Vcs.Push.Dialog.v2" timestamp="1589396298866">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1589398818789">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="392" y="158" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584097007025" />
     <state x="470" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589396298866" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589394471362" />
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589398818789" />
     <state x="2012" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589379101531">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

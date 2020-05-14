@@ -1,0 +1,194 @@
+[
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/junkrat/hero-select-portrait.png",
+    "name": "Junkrat",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/9/92/Junkrat_-_It%27s_a_perfect_day_for_some_mayhem.ogg",
+    "type": "damage"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/doomfist/hero-select-portrait.png",
+    "name": "Doomfist",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/e/e7/Doomfist_-_Talk_to_the_fist.ogg",
+    "type": "damage"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/wrecking-ball/hero-select-portrait.png",
+    "name": "Wrecking Ball",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/a/a6/Wrecking_Ball_-_Vocabulary_not_found._Translation_impossible.ogg",
+    "type": "tank"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/sigma/hero-select-portrait.png",
+    "name": "Sigma",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/0/0a/Sigma_-_Like_Newton_and_the_apple.ogg",
+    "type": "tank"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/symmetra/hero-select-portrait.png",
+    "name": "Symmetra",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/a/a9/Symmetra_-_Welcome_to_my_reality.ogg",
+    "type": "damage"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/orisa/hero-select-portrait.png",
+    "name": "Orisa",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/c/cc/Orisa_-_Do_you_need_a_hug.mp3",
+    "type": "tank"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/torbjorn/hero-select-portrait.png",
+    "name": "Torbjörn",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/a/ab/Torbjorn-CompletionDate.wav",
+    "type": "damage"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/reinhardt/hero-select-portrait.png",
+    "name": "Reinhardt",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/5/53/Reinhardt_-_Honor_and_glory.ogg",
+    "type": "tank"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/baptiste/hero-select-portrait.png",
+    "name": "Baptiste",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/4/41/Baptiste_-_Respawn_-_Well_It_Could_Be_Worse.ogg",
+    "type": "support"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/ana/hero-select-portrait.png",
+    "name": "Ana",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/2/22/Ana_-_Go_to_sleep.wav",
+    "type": "support"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/soldier-76/hero-select-portrait.png",
+    "name": "Soldier:76",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/0/04/S76_-_Im_not_your_father.wav",
+    "type": "damage"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/brigitte/hero-select-portrait.png",
+    "name": "Brigitte",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/7/7f/Brigitte-_Patching_you_up.ogg",
+    "type": "support"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/widowmaker/hero-select-portrait.png",
+    "name": "Widowmaker",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/a/a0/Widowmaker_-_What%27s_an_aimbot.ogg",
+    "type": "damage"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/dva/hero-select-portrait.png",
+    "name": "D.va",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/2/26/D.Va_-_Annyeong.ogg",
+    "type": "tank"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/lucio/hero-select-portrait.png",
+    "name": "Lúcio",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/7/7e/L%C3%BAcio_-_cant_stop_wont_stop.ogg",
+    "type": "support"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/tracer/hero-select-portrait.png",
+    "name": "Tracer",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/c/c0/Tracer_-_Ever_get_that_feeling_of_d%C3%A9j%C3%A0_vu.ogg",
+    "type": "damage"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/echo/hero-select-portrait.png",
+    "name": "Echo",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/c/cc/Echo_-_Type_Echo.ogg",
+    "type": "damage"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/reaper/hero-select-portrait.png",
+    "name": "Reaper",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/f/fc/Reaper_-_I%27m_Back_In_Black.ogg",
+    "type": "damage"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/sombra/hero-select-portrait.png",
+    "name": "Sombra",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/4/41/Sombra_-_Boop%21.ogg",
+    "type": "damage"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/ashe/hero-select-portrait.png",
+    "name": "Ashe",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/3/30/Ashe_-_B.O.B%21_Do_somethin%27%21.ogg",
+    "type": "damage"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/mei/hero-select-portrait.png",
+    "name": "Mei",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/6/60/Mei_-_Anyone_want_a_popsicle.mp3",
+    "type": "damage"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/moira/hero-select-portrait.png",
+    "name": "Moira",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/0/0a/Stupidity.ogg",
+    "type": "support"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/zarya/hero-select-portrait.png",
+    "name": "Zarya",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/9/9a/Zarya_-_Big%2C_fuzzy_Siberian_bear.ogg",
+    "type": "tank"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/mercy/hero-select-portrait.png",
+    "name": "Mercy",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/2/24/Medic%21..._Wait%2C_that%27s_me%21.mp3",
+    "type": "support"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/pharah/hero-select-portrait.png",
+    "name": "Pharah",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/f/f1/Pharah_-_Justice_rains_from_above%21.ogg",
+    "type": "damage"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/genji/hero-select-portrait.png",
+    "name": "Genji",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/b/bd/Genji_-_I_need_healing.ogg",
+    "type": "damage"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/hanzo/hero-select-portrait.png",
+    "name": "Hanzo",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/1/12/Hanzo_-_Sake.ogg",
+    "type": "damage"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/winston/hero-select-portrait.png",
+    "name": "Winston",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/7/74/Winston_-_Did_someone_say_peanut_butter.ogg",
+    "type": "tank"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/mccree/hero-select-portrait.png",
+    "name": "Mccree",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/5/5a/McCree_-_Well%2C_It%27s_High_Noon_Somewhere_In_The_World.mp3",
+    "type": "damage"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/zenyatta/hero-select-portrait.png",
+    "name": "Zenyatta",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/9/98/Zenyatta_-_Life_is_more_than_a_series_of_ones_and_zeroes.ogg",
+    "type": "support"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/bastion/hero-select-portrait.png",
+    "name": "Bastion",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/9/96/Bastion_-_Dwee_wee_woh.mp3",
+    "type": "damage"
+  },
+  {
+    "avatar": "https://d1u1mce87gyfbn.cloudfront.net/hero/roadhog/hero-select-portrait.png",
+    "name": "Roadhog",
+    "sound": "https://gamepedia.cursecdn.com/overwatch_gamepedia/5/5a/Roadhog_-_Say_Bacon_One_More_Time.mp3",
+    "type": "tank"
+  }
+]

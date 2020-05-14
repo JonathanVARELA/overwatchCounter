@@ -1,23 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import "../components/CardList.css"
-import * as firebase from "firebase/app";
+import charactersData from '../data/characters.json';
 
 const CharacterListProvider = (props) => {
 
     const [characters, setCharacters] = useState();
 
-    const getCharacters = async () => {
-        const db = firebase.firestore();
-        return await db
-            .collection("characters")
-            .get()
-            .then(snapshot => {
-                const characters = [];
-                snapshot.forEach(doc => characters.push(doc.data()));
-                characters.sort((a, b) => a.name.localeCompare(b.name));
-                return characters;
-            })
-    };
+    const getCharacters = async () => charactersData.sort((a, b) => a.name.localeCompare(b.name));
 
     const fetchCharacters = () => {
         getCharacters()
