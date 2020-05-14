@@ -12,8 +12,6 @@ const CounterCard = ({index, selectedCharacter, currentCounterCharacter, isStron
 
     const db = firebase.firestore();
 
-    const [score, setScore] = useState(currentCounterCharacter.score);
-
     const updateCharacterScore = async (score) => {
         await db.collection("counters")
             .doc(`${selectedCharacter.name}VS${currentCounterCharacter.name}CounterScore`)
@@ -65,14 +63,12 @@ const CounterCard = ({index, selectedCharacter, currentCounterCharacter, isStron
                 <div className={"counter-score"}>
                     <img src={counterArrow} className={"up-arrow"} alt="UP"
                          onClick={() => {
-                             setScore(score + 1);
-                             updateCharacterScore(score + 1);
+                             updateCharacterScore(currentCounterCharacter.score + 1);
                          }}/>
-                    <span>{(score > 0 ? "+" : "") + score}</span>
+                    <span>{(currentCounterCharacter.score > 0 ? "+" : "") + currentCounterCharacter.score}</span>
                     <img src={counterArrow} className={"down-arrow"} alt="DOWN"
                          onClick={() => {
-                             setScore(score - 1);
-                             updateCharacterScore(score - 1);
+                             updateCharacterScore(currentCounterCharacter.score - 1);
                          }}/>
                 </div>
                 <div className={"name"}>

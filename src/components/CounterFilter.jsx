@@ -18,7 +18,7 @@ const CounterFilter = ({characters, children}) => {
 
     const isStrongAgainstSelected = useRef(true);
 
-    const sortOrder = useRef(1);
+    const sortOrder = useState(1);
 
     const getScores = useCallback(() => {
         if (!selectedCharacter) return [];
@@ -44,8 +44,8 @@ const CounterFilter = ({characters, children}) => {
                     return charactersWithScore;
                 });
         return getCharacterWithScore()
-            .then(charactersWithScores => charactersWithScores.sort((a, b) => (a.score - b.score) * sortOrder))
-    }, [characters, getScores, selectedCharacter])
+            .then(charactersWithScores => charactersWithScores.sort((a, b) => (a.score - b.score) * sortOrder.current))
+    }, [characters, getScores, selectedCharacter, sortOrder])
 
     const filterCharacters = useCallback(() => {
         getFilteredCharacter()
@@ -93,7 +93,7 @@ const CounterFilter = ({characters, children}) => {
         wasSelectedCharacter.current = selectedCharacter != null;
 
         return () => isMountedRef.current = false;
-    }, [getFilteredCharacter, listenForScores, selectedCharacter])
+    }, [getFilteredCharacter, listenForScores, selectedCharacter, sortOrder])
 
     return (
         <div className={"counter-container"}>
