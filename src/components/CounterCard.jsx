@@ -8,7 +8,7 @@ import counterArrow from "../images/counter-arrow.svg";
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 
-const CounterCard = ({index, selectedCharacter, currentCounterCharacter, isStrongAgainstSelected}) => {
+const CounterCard = ({index, selectedCharacter, currentCounterCharacter}) => {
 
     const db = firebase.firestore();
 

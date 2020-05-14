@@ -128,8 +128,7 @@ const CounterFilter = ({characters, children}) => {
                 characters
                     ? React.Children.toArray(children).map((child) =>
                         React.cloneElement(child, {
-                            characters: (selectedCharacter ? filteredCharacters : characters),
-                            isStrongAgainstSelected: isStrongAgainstSelected,
+                            characters: (selectedCharacter ? filteredCharacters : characters)
                         })
                     )
                     : <></>
