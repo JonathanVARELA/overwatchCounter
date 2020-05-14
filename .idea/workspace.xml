@@ -32,11 +32,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="[Desktop] make home responsive">
+    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="[Desktop] fix filter to the right on chrome">
       <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/images/black-counter-arrow.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CounterFilter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterFilter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CounterFilter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterFilter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CounterList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterList.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MainFilter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainFilter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainFilter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainFilter.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,14 +130,7 @@
       <workItem from="1588272413835" duration="4270000" />
       <workItem from="1588580754237" duration="767000" />
       <workItem from="1589275656737" duration="16581000" />
-      <workItem from="1589353357408" duration="66337000" />
-    </task>
-    <task id="LOCAL-00006" summary="add fonts">
-      <created>1588154715733</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1588154715733</updated>
+      <workItem from="1589353357408" duration="71731000" />
     </task>
     <task id="LOCAL-00007" summary="ajout du header">
       <created>1588157883541</created>
@@ -469,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589465591870</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="[Desktop] fix filter to the right on chrome">
+      <created>1589467468023</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1589467468023</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -488,7 +494,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="adjust outline" />
     <MESSAGE value="make filter more responsive on small devices&#10;implement counterlist logic" />
     <MESSAGE value="add return button when a character is selected" />
     <MESSAGE value="add selectedCharacter component" />
@@ -513,7 +518,8 @@
     <MESSAGE value="fix wrong counter value&#10;fix filter css" />
     <MESSAGE value="make counter button click area bigger" />
     <MESSAGE value="[Desktop] make home responsive" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Desktop] make home responsive" />
+    <MESSAGE value="[Desktop] fix filter to the right on chrome" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Desktop] fix filter to the right on chrome" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2744" y="418" key="#ESLint" timestamp="1589381004186">
@@ -558,12 +564,12 @@
     </state>
     <state x="461" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588146037939" />
     <state x="2381" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589396798418" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1589465593453">
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1589467469299">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="392" y="158" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584097007025" />
     <state x="470" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589396298866" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589465593453" />
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589467469299" />
     <state x="2012" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589379101531">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -586,10 +592,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2536" y="250" key="run.anything.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589286649457" />
-    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1589465514423">
+    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1589468640137">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589391501115" />
-    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589465514423" />
+    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589468640137" />
   </component>
 </project>

@@ -7,8 +7,6 @@ import Header from "./components/Header";
 import MainFilter from "./components/MainFilter";
 import Footer from "./components/Footer";
 import DiscoverMore from "./components/DiscoverMore";
-import CharacterCounterModal from "./components/CharacterCounterModal";
-import SelectedCharacterCard from "./components/SelectedCharacterCard";
 
 function App() {
 
@@ -18,9 +16,7 @@ function App() {
         <>
             <FirebaseConnectionProvider>
                 <CharacterContext.Provider value={[selectedCharacter, setSelectedCharacter]}>
-                    <CharacterCounterModal/>
                     <Header/>
-                    <SelectedCharacterCard/>
                         <CharacterListProvider>
                             <MainFilter/>
                         </CharacterListProvider>

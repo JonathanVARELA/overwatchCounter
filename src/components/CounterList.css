@@ -7,9 +7,3 @@
     transition-duration: 500ms;
 }
 
-
-@media screen and (min-width: 800px) {
-    #counterList {
-        position: fixed;
-    }
-}

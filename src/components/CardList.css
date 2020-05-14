@@ -17,8 +17,9 @@
     #cardList {
         padding: 3vh 15vw 3vh 15vw;
     }
-}
 
-.sticky + #cardList {
-    padding-top: 40px;
+    #cardList.character-selected {
+        max-width: 90vh;
+    }
+
 }

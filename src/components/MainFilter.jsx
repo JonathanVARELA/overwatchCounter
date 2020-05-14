@@ -8,6 +8,7 @@ import {animateScroll as scroll} from "react-scroll";
 import CharacterContext from "../CharacterContext";
 import CardList from "./CardList";
 import CounterFilter from "./CounterFilter";
+import SelectedCharacterCard from "./SelectedCharacterCard";
 
 const MainFilter = ({characters}) => {
 
@@ -97,8 +98,10 @@ const MainFilter = ({characters}) => {
                     <p>BACK TO TOP</p>
                 </div>
             </div>
+            <div className={"main-container"}>
                 <CardList characters={selectedCharacter ? characters : filteredCharacters}/>
                 <CounterFilter key={filteredCharacters} characters={filteredCharacters}/>
+            </div>
         </>
     )
 };

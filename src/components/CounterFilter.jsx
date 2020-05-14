@@ -4,6 +4,7 @@ import CharacterContext from "../CharacterContext";
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import CounterList from "./CounterList";
+import SelectedCharacterCard from "./SelectedCharacterCard";
 
 const CounterFilter = ({characters}) => {
 
@@ -38,7 +39,6 @@ const CounterFilter = ({characters}) => {
             getScores()
                 .then(scores => {
                     const charactersWithScore = [];
-                    console.log(scores);
                     for (const character of [...characters]) {
                         if (character.name === selectedCharacter.name) continue;
                         charactersWithScore.push({score: scores.find(score => score.rightCharacter === character.name)?.score || 0, ...character})
@@ -97,12 +97,29 @@ const CounterFilter = ({characters}) => {
         return () => isMountedRef.current = false;
     }, [getFilteredCharacter, listenForScores, selectedCharacter, sortOrder])
 
+
+    const counterContainerRef = useRef();
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.innerWidth <= 801 || window.pageYOffset > 50 || counterContainerRef.current?.style?.marginTop == null) {
+                return;
+            }
+            counterContainerRef.current.style.marginTop = -window.pageYOffset + "px";
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            isMountedRef.current = false;
+            window.removeEventListener('scroll', () => handleScroll);
+        };
+    }, []);
+
     return (
-        <div className={"counter-container"}>
+        <div ref={counterContainerRef} className={"counter-container"}>
             {
                 selectedCharacter
                     ?
                     <>
+                        <SelectedCharacterCard/>
                         <div className={"counter-filter"}>
                             <div className={"strong-against " + (isStrongAgainstSelected.current ? "selected" : "")}
                                  onClick={() => {
