@@ -8,13 +8,17 @@ import useAudio from "../utils/AudioPlayer";
 
 const Card = ({avatar, name, type, sound}) => {
 
-    const [, setSelectedCharacter] = useContext(CharacterContext);
+    const [selectedCharacter, setSelectedCharacter] = useContext(CharacterContext);
 
     const [playSound] = useAudio(sound);
 
     const updateSelectedCharacter = () => {
         playSound();
-        setSelectedCharacter({avatar, name, type, sound});
+        if (selectedCharacter && selectedCharacter.name === name) {
+            setSelectedCharacter(null);
+        } else {
+            setSelectedCharacter({avatar, name, type, sound});
+        }
     };
 
     const getTypeImage = () => {

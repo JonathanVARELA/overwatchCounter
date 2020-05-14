@@ -9,3 +9,34 @@
 .header > img {
     margin-left: 20px;
 }
+
+.header p {
+    align-self: center;
+    flex-grow: 1;
+    text-align: center;
+    justify-content: center;
+    margin-left: -13rem;
+    color: white;
+    font-family: Montserrat-Bold, sans-serif;
+    font-style: italic;
+    font-size: .85rem;
+}
+
+@media screen and (max-width: 800px) {
+    .header.selected-character {
+        display: none !important;
+    }
+    .header p {
+        display: none!important;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .header {
+        min-height: 50px;
+    }
+    .header > img {
+        margin-left: 10px;
+        max-height: 35px;
+    }
+}

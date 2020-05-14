@@ -16,13 +16,24 @@
 }
 
 @media screen and (min-width: 800px) {
+
+    .discover-more {
+        background-color: white !important;
+    }
+
     .discover-more > div {
         flex-direction: row;
     }
 
     .discover-more > div > img {
-        max-width: 20vh;
-        margin: 3vh 5vh 3vh 5vh;
+        max-width: 8rem;
+        margin: 4rem 3rem 5rem 3rem;
+        cursor: pointer;
+    }
+
+    .discover-more > div > img:hover {
+        max-width: 9rem;
+        margin: 3.4rem 2.5rem 4.4rem 2.5rem;
     }
 }
 
@@ -33,13 +44,14 @@
     .discover-more > div > img {
         max-width: 20vh;
         margin: 3vh;
+        cursor: pointer;
     }
 }
 
 .discover-more > p {
     text-align: center;
     font-size: 1.4em;
-    font-family: "Monstserrat-Bold", sans-serif;
+    font-family: Montserrat-Bold, sans-serif;
     font-weight: bold;
     color: #232323;
     margin: 0 3vh 0 3vh;

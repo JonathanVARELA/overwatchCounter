@@ -74,12 +74,12 @@ const MainFilter = ({characters}) => {
     return (
         <>
             <div ref={ref}
-                 className={`main-filter sticky-wrapper${isSticky ? ' sticky' : ''} ${selectedCharacter ? "character-selected" : ""}`}>
+                 className={`main-filter sticky-wrapper${isSticky ? ' sticky' : ''} ${selectedCharacter ? " character-selected" : ""}`}>
                 <div className={"return-button"}>
                     <img src={rightArrow} alt={"return"} onClick={() => setSelectedCharacter(null)}/>
                 </div>
                 <span>FILTERS</span>
-                <div>
+                <div className={"filter-icons"}>
                     <img className={"filter-icon " + (selectedFilters.list.includes("damage") ? "selected-filter" : "")}
                          src={typeDamageImage} alt="Damage"
                          onClick={() => filterCharacters("damage")}/>
@@ -92,12 +92,13 @@ const MainFilter = ({characters}) => {
                          alt="Tank"
                          onClick={() => filterCharacters("tank")}/>
                 </div>
-                <div className={"scroll-up-button"}>
-                    <img src={rightArrow} alt={"scroll up"} onClick={() => scroll.scrollToTop()}/>
+                <div className={"scroll-up-button"} onClick={() => scroll.scrollToTop()}>
+                    <img src={rightArrow} alt={"scroll up"}/>
+                    <p>BACK TO TOP</p>
                 </div>
             </div>
-            <CardList characters={selectedCharacter ? characters : filteredCharacters}/>
-            <CounterFilter key={filteredCharacters} characters={filteredCharacters}/>
+                <CardList characters={selectedCharacter ? characters : filteredCharacters}/>
+                <CounterFilter key={filteredCharacters} characters={filteredCharacters}/>
         </>
     )
 };

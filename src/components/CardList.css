@@ -15,10 +15,10 @@
 
 @media screen and (min-width: 800px) {
     #cardList {
-        padding: .5vh 15vw 0 15vw;
+        padding: 3vh 15vw 3vh 15vw;
     }
 }
 
 .sticky + #cardList {
-    padding-top: 70px;
+    padding-top: 40px;
 }

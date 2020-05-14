@@ -9,7 +9,7 @@ const DiscoverMore = () => {
     return (
         <>
             <div className={"discover-more"}>
-                <p>DISCOVER MORE OF OUR COUNTER WEBSITES</p>
+                <p>DISCOVER MORE OF OUR<br />COUNTER WEBSITES</p>
                 <div>
                     <img src={lolImage} alt="League of legends"/>
                     <img src={hotsImage} alt="Heroes of the storm"/>

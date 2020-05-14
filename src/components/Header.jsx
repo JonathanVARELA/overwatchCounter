@@ -8,15 +8,10 @@ const Header = () => {
     const [selectedCharacter,] = useContext(CharacterContext);
 
     return (
-        <>
-            {
-                selectedCharacter
-                    ? <></>
-                    : <div className={"header"}>
-                        <img src={logo} alt="Overwatch Counter"/>
-                    </div>
-            }
-        </>
+        <div className={"header " + (selectedCharacter ? "selected-character" : "")}>
+            <img src={logo} alt="Overwatch Counter"/>
+            <p>"MADE BY PLAYERS FOR PLAYERS"</p>
+        </div>
     )
 };
 

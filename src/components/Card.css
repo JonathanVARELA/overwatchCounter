@@ -4,13 +4,17 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.15);
+    cursor: pointer;
 }
 
 @media screen and (min-width: 60vh) {
     .card {
-        margin: .5vh;
-        width: 20vh;
-        height: 34.4vh;
+        margin: 1vh;
+        width: 16.92vh;
+        height: 29.1vh;
+    }
+    .card-name > p {
+        margin: 0.7rem 0 .7rem 0;
     }
 }
 

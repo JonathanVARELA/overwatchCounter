@@ -13,9 +13,54 @@
 }
 
 @media screen and (min-width: 800px) {
+
+    .main-filter {
+        min-height: 40px;
+    }
+
     .main-filter > .return-button {
         display: none !important;
     }
+
+    .scroll-up-button{
+        display: flex;
+        flex-direction: row;
+        min-width: 11rem;
+    }
+
+    .scroll-up-button > img{
+        max-height: 1.5rem !important;
+        padding: 0 1rem 0 .5rem;
+    }
+
+    .main-filter > .scroll-up-button:hover > img {
+        max-height: 1.7rem !important;
+        margin: -.1rem !important;
+    }
+
+    .main-filter > .filter-icons {
+        justify-content: left!important;
+        margin-left: 3rem;
+    }
+
+    .main-filter > div > .filter-icon {
+        max-height: 1.9rem !important;
+        margin-right: 1rem !important;
+    }
+
+    .main-filter > div > .filter-icon:hover {
+        max-height: 2.1rem !important;
+        margin: -0.1rem .9rem -.1rem -.1rem !important;
+
+
+    }
+}
+
+.main-filter > .scroll-up-button > p {
+    color: white;
+    font-family: Montserrat-Regular, sans-serif;
+    font-weight: bold;
+    font-size: .8rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -32,6 +77,15 @@
 
     .scroll-up-button {
         max-width: 80px !important;
+    }
+
+    .scroll-up-button > p {
+        display: none !important;
+    }
+
+    .main-filter > .scroll-up-button > img,
+    .main-filter > .return-button > img {
+        max-height: 45px;
     }
 }
 
@@ -68,7 +122,7 @@
 
 .main-filter > span {
     color: white;
-    font-family: Monstserrat-Regular, sans-serif;
+    font-family: sans-serif;
     letter-spacing: .03em;
     font-weight: bold;
     margin-left: 2.5vh;
@@ -89,16 +143,12 @@
 .main-filter > div > .filter-icon {
     max-height: 50px;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .selected-filter {
     -webkit-filter: invert(30%) sepia(35%) saturate(3007%) hue-rotate(193deg);
     filter: invert(30%) sepia(35%) saturate(3007%) hue-rotate(193deg);
-}
-
-.main-filter > div > .filter-icon:hover {
-    max-height: 56px;
-    margin: -3px 17px -3px -3px;
 }
 
 .main-filter > .scroll-up-button,
@@ -109,20 +159,13 @@
     align-content: center;
     justify-content: center;
     max-width: 80px;
-}
-
-.main-filter > .scroll-up-button > img:hover,
-.main-filter > .return-button > img:hover {
-    max-height: 51px;
-    margin: 0 -3px 0 -3px;
+    cursor: pointer;
 }
 
 .main-filter > .scroll-up-button > img,
 .main-filter > .return-button > img {
     align-self: center;
-    max-height: 45px;
 }
-
 
 .scroll-up-button > img {
     -webkit-transform: rotate(180deg);

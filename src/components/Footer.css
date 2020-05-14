@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    font-family: "Monstserrat-Bold", sans-serif;
+    font-family: Montserrat-Bold, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -18,4 +18,21 @@
     align-self: center;
     margin: 0 10px 0 10px;
     letter-spacing: .03em;
+}
+
+@media screen and (max-width: 800px) {
+    .footer {
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer > span {
+        font-size: .8rem;
+    }
+}
+
+.footer > img:hover {
+    min-width: 2.3rem;
+    margin: -.15rem;
 }

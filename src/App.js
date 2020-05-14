@@ -21,11 +21,9 @@ function App() {
                     <CharacterCounterModal/>
                     <Header/>
                     <SelectedCharacterCard/>
-                    <div id={"main-container"}>
                         <CharacterListProvider>
                             <MainFilter/>
                         </CharacterListProvider>
-                    </div>
                 </CharacterContext.Provider>
             </FirebaseConnectionProvider>
             <DiscoverMore/>
