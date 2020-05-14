@@ -47,14 +47,14 @@ const CounterFilter = ({characters, children}) => {
             .then(charactersWithScores => charactersWithScores.sort((a, b) => (a.score - b.score) * sortOrder))
     }, [characters, getScores, selectedCharacter])
 
-    const filterCharacters = async () => {
+    const filterCharacters = useCallback(() => {
         getFilteredCharacter()
             .then(result => {
                 if (isMountedRef.current) {
                     setFilteredCharacters(result)
                 }
             });
-    }
+    }, [getFilteredCharacter]);
 
     const listenForScores = useCallback(() => {
         firebase.firestore()
