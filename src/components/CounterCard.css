@@ -50,7 +50,7 @@
 .counter-card > .profile > .counter-score img {
     align-self: start;
     max-width: 3vh;
-    margin: 0 6vh 0 6vh;
+    padding: 2vh 6vh 2vh 6vh;
 }
 
 .counter-card > .profile > .counter-score > span {
