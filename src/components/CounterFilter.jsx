@@ -93,7 +93,7 @@ const CounterFilter = ({characters, children}) => {
         wasSelectedCharacter.current = selectedCharacter != null;
 
         return () => isMountedRef.current = false;
-    }, [getFilteredCharacter, selectedCharacter])
+    }, [getFilteredCharacter, listenForScores, selectedCharacter])
 
     return (
         <div className={"counter-container"}>
