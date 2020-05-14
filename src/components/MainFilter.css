@@ -39,7 +39,7 @@
     }
 
     .main-filter > .filter-icons {
-        justify-content: left!important;
+        justify-content: flex-end!important;
         margin-left: 3rem;
     }
 
