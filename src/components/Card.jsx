@@ -36,7 +36,7 @@ const Card = ({avatar, name, type, sound}) => {
 
     return (
         <div className={"card"}
-             onClick={() => updateSelectedCharacter() & window.scrollTo(0, 0)}>
+             onClick={() => updateSelectedCharacter() & (window.innerWidth <= 801 ? window.scroll(0, 0) : {}) }>
             <div className={"image-container"} style={{backgroundImage: `url(${avatar})`}}>
                 <div className={"card-name"}>
                     <p>

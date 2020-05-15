@@ -77,6 +77,7 @@ const MainFilter = ({characters}) => {
                  className={`main-filter sticky-wrapper${isSticky ? ' sticky' : ''} ${selectedCharacter ? " character-selected" : ""}`}>
                 <div className={"return-button"}>
                     <img src={rightArrow} alt={"return"} onClick={() => setSelectedCharacter(null)}/>
+                    <p>BACK TO THE LIST</p>
                 </div>
                 <span>FILTERS</span>
                 <div className={"filter-icons"}>
