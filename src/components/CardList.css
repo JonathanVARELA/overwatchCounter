@@ -19,11 +19,11 @@
 
 @media screen and (min-width: 800px) {
     #cardList {
-        padding: 3vh 15vw 3vh 15vw;
+        padding: 3vh 8vw 3vh 8vw;
     }
 
     #cardList.character-selected {
-        max-width: 90vh;
+        max-width: 50.5%;
     }
 
     #cardList.character-selected > div > .card {

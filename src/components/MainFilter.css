@@ -193,7 +193,7 @@
         position: fixed;
         overflow-y: scroll;
         max-height: 100%;
-        max-width: 25vw;
+        max-width: 33vw;
         right: 0;
     }
     .sticky + .main-container > .counter-container {
