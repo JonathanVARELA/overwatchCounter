@@ -50,6 +50,7 @@
 
 .counter-card > .profile > .role-and-score > .counter-score img {
     align-self: start;
+    cursor: pointer;
 }
 
 .counter-card > .profile > .role-and-score > .counter-score > span {
