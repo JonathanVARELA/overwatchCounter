@@ -1,6 +1,8 @@
 .counter-container {
     display: none;
     flex-direction: column;
+    box-shadow: -5px 3px 10px 0 rgba(0, 0, 0, .3);
+    z-index: 1;
 }
 .counter-container.selected-character {
     display: flex !important;
