@@ -22,4 +22,8 @@
         max-width: 90vh;
     }
 
+    #cardList.character-selected > div > .card {
+        width: 14.1vh;
+        height: 24.25vh;
+    }
 }

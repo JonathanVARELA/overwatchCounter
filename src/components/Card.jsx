@@ -35,15 +35,17 @@ const Card = ({avatar, name, type, sound}) => {
     };
 
     return (
-        <div className={"card"} style={{backgroundImage: `url(${avatar})`}}
+        <div className={"card"}
              onClick={() => updateSelectedCharacter() & window.scrollTo(0, 0)}>
-            <div className={"card-name"}>
-                <p>
-                    {name}
-                </p>
-            </div>
-            <div className={"character-type"}>
-                <img src={getTypeImage(type)} alt={type}/>
+            <div className={"image-container"} style={{backgroundImage: `url(${avatar})`}}>
+                <div className={"card-name"}>
+                    <p>
+                        {name}
+                    </p>
+                </div>
+                <div className={"character-type"}>
+                    <img src={getTypeImage(type)} alt={type}/>
+                </div>
             </div>
         </div>
     )

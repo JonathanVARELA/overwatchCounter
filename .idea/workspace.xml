@@ -32,17 +32,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="[Desktop] fix filter to the right on chrome">
+    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="[Desktop] fix scroll (should be okay this time... maybe !)">
       <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/images/black-counter-arrow.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CardList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CounterFilter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterFilter.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CounterFilter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterFilter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CounterList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainFilter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainFilter.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainFilter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainFilter.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,28 +126,8 @@
       <workItem from="1588272413835" duration="4270000" />
       <workItem from="1588580754237" duration="767000" />
       <workItem from="1589275656737" duration="16581000" />
-      <workItem from="1589353357408" duration="71731000" />
-    </task>
-    <task id="LOCAL-00007" summary="ajout du header">
-      <created>1588157883541</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1588157883541</updated>
-    </task>
-    <task id="LOCAL-00008" summary="a lot a awesome stuff that i'm to lazy to describe">
-      <created>1588159826329</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1588159826329</updated>
-    </task>
-    <task id="LOCAL-00009" summary="add image type">
-      <created>1588164193003</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1588164193003</updated>
+      <workItem from="1589353357408" duration="72814000" />
+      <workItem from="1589526267303" duration="2263000" />
     </task>
     <task id="LOCAL-00010" summary="sticky filter">
       <created>1588170051407</created>
@@ -475,7 +451,28 @@
       <option name="project" value="LOCAL" />
       <updated>1589467468023</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="[Desktop] setup counter list position">
+      <created>1589472930615</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1589472930615</updated>
+    </task>
+    <task id="LOCAL-00057" summary="[Desktop] fix scroll">
+      <created>1589473092461</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1589473092461</updated>
+    </task>
+    <task id="LOCAL-00058" summary="[Desktop] fix scroll (should be okay this time... maybe !)">
+      <created>1589473374035</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1589473374035</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -494,9 +491,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="make filter more responsive on small devices&#10;implement counterlist logic" />
-    <MESSAGE value="add return button when a character is selected" />
-    <MESSAGE value="add selectedCharacter component" />
     <MESSAGE value="create counter list cards" />
     <MESSAGE value="fix build error" />
     <MESSAGE value="add missing files" />
@@ -519,7 +513,10 @@
     <MESSAGE value="make counter button click area bigger" />
     <MESSAGE value="[Desktop] make home responsive" />
     <MESSAGE value="[Desktop] fix filter to the right on chrome" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Desktop] fix filter to the right on chrome" />
+    <MESSAGE value="[Desktop] setup counter list position" />
+    <MESSAGE value="[Desktop] fix scroll" />
+    <MESSAGE value="[Desktop] fix scroll (should be okay this time... maybe !)" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Desktop] fix scroll (should be okay this time... maybe !)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2744" y="418" key="#ESLint" timestamp="1589381004186">
@@ -539,6 +536,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="423" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1584097004494" />
+    <state x="2022" y="28" key="DiffContextDialog" timestamp="1589472943372">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2022" y="28" key="DiffContextDialog/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589472943372" />
     <state width="1899" height="64" key="GridCell.Tab.0.bottom" timestamp="1589446562737">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -564,12 +565,12 @@
     </state>
     <state x="461" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588146037939" />
     <state x="2381" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589396798418" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1589467469299">
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1589473375575">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="392" y="158" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584097007025" />
     <state x="470" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589396298866" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589467469299" />
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589473375575" />
     <state x="2012" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589379101531">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -582,12 +583,12 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="433" y="0" width="1397" height="900" key="dock-window-1/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589355559000" />
-    <state x="2503" y="177" width="753" height="687" key="find.popup" timestamp="1589458105327">
+    <state x="2503" y="177" width="753" height="687" key="find.popup" timestamp="1589473294537">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="486" y="146" width="627" height="568" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1584093344682" />
     <state x="583" y="177" width="753" height="687" key="find.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589395892061" />
-    <state x="2503" y="177" width="753" height="687" key="find.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589458105327" />
+    <state x="2503" y="177" width="753" height="687" key="find.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589473294537" />
     <state x="2536" y="250" key="run.anything.popup" timestamp="1589286649457">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
