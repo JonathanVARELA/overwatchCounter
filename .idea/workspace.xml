@@ -32,12 +32,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="resize">
+    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="[Desktop] ✔ selected character">
       <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/images/black-counter-arrow.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CounterCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterCard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SelectedCharacterCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SelectedCharacterCard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CounterFilter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterFilter.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,14 +126,7 @@
       <workItem from="1589275656737" duration="16581000" />
       <workItem from="1589353357408" duration="72814000" />
       <workItem from="1589526267303" duration="3096000" />
-      <workItem from="1589531010306" duration="5698000" />
-    </task>
-    <task id="LOCAL-00015" summary="fix svg on chrome">
-      <created>1588176602103</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1588176602103</updated>
+      <workItem from="1589531010306" duration="5822000" />
     </task>
     <task id="LOCAL-00016" summary="make sound play only once">
       <created>1588235164551</created>
@@ -472,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589535402828</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="[Desktop] ✔ selected character">
+      <created>1589536745823</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1589536745823</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,7 +490,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="remove useless dependencies" />
     <MESSAGE value="reduce firestore read operations" />
     <MESSAGE value="remove useless imports" />
     <MESSAGE value="green it: use local data" />
@@ -516,7 +514,8 @@
     <MESSAGE value="fix responsive" />
     <MESSAGE value="white discover more" />
     <MESSAGE value="resize" />
-    <option name="LAST_COMMIT_MESSAGE" value="resize" />
+    <MESSAGE value="[Desktop] ✔ selected character" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Desktop] ✔ selected character" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2744" y="418" key="#ESLint" timestamp="1589381004186">
@@ -565,12 +564,12 @@
     </state>
     <state x="461" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588146037939" />
     <state x="2381" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589396798418" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1589535404115">
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1589536747049">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="392" y="158" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584097007025" />
     <state x="470" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589396298866" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589535404115" />
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589536747049" />
     <state x="2012" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589379101531">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

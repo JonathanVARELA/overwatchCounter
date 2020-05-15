@@ -6,7 +6,6 @@
 .counter-filter {
     display: flex;
     flex-direction: row;
-    min-height: 6vh;
     align-content: center;
 }
 
@@ -41,4 +40,14 @@
     background-color: #a86b12;
 }
 
+@media screen and (min-width: 800px) {
+    .counter-filter {
+        min-height: 5vh;
+    }
+}
 
+@media screen and (max-width: 800px) {
+    .counter-filter {
+        min-height: 6vh;
+    }
+}
