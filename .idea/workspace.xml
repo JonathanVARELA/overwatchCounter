@@ -32,11 +32,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="[Desktop] ✔ selected character">
+    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="[Desktop] ✔ counter filter hover">
       <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/images/black-counter-arrow.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CounterFilter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterFilter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CounterCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterCard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CounterCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainFilter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainFilter.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,21 +128,7 @@
       <workItem from="1589275656737" duration="16581000" />
       <workItem from="1589353357408" duration="72814000" />
       <workItem from="1589526267303" duration="3096000" />
-      <workItem from="1589531010306" duration="5822000" />
-    </task>
-    <task id="LOCAL-00016" summary="make sound play only once">
-      <created>1588235164551</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1588235164551</updated>
-    </task>
-    <task id="LOCAL-00017" summary="pretty scrollbar">
-      <created>1588238535631</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1588238535631</updated>
+      <workItem from="1589531010306" duration="10414000" />
     </task>
     <task id="LOCAL-00018" summary="add filter">
       <created>1588245685463</created>
@@ -471,7 +459,21 @@
       <option name="project" value="LOCAL" />
       <updated>1589536745823</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="[Desktop] ✔ counter filter">
+      <created>1589536852386</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1589536852386</updated>
+    </task>
+    <task id="LOCAL-00066" summary="[Desktop] ✔ counter filter hover">
+      <created>1589537004592</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1589537004592</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,8 +492,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="reduce firestore read operations" />
-    <MESSAGE value="remove useless imports" />
     <MESSAGE value="green it: use local data" />
     <MESSAGE value="update counter values only when a new character is selected/deselected" />
     <MESSAGE value="bind counter score to database" />
@@ -515,7 +515,9 @@
     <MESSAGE value="white discover more" />
     <MESSAGE value="resize" />
     <MESSAGE value="[Desktop] ✔ selected character" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Desktop] ✔ selected character" />
+    <MESSAGE value="[Desktop] ✔ counter filter" />
+    <MESSAGE value="[Desktop] ✔ counter filter hover" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Desktop] ✔ counter filter hover" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2744" y="418" key="#ESLint" timestamp="1589381004186">
@@ -539,37 +541,37 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2022" y="28" key="DiffContextDialog/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589472943372" />
-    <state width="1899" height="64" key="GridCell.Tab.0.bottom" timestamp="1589446562737">
+    <state width="1899" height="64" key="GridCell.Tab.0.bottom" timestamp="1589539672787">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="778" height="208" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1584083350355" />
-    <state width="1899" height="64" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589446562737" />
-    <state width="1899" height="64" key="GridCell.Tab.0.center" timestamp="1589446562737">
+    <state width="1899" height="64" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589539672787" />
+    <state width="1899" height="64" key="GridCell.Tab.0.center" timestamp="1589539672786">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="778" height="208" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1584083350355" />
-    <state width="1899" height="64" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589446562737" />
-    <state width="1899" height="64" key="GridCell.Tab.0.left" timestamp="1589446562736">
+    <state width="1899" height="64" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589539672786" />
+    <state width="1899" height="64" key="GridCell.Tab.0.left" timestamp="1589539672786">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="778" height="208" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1584083350355" />
-    <state width="1899" height="64" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589446562736" />
-    <state width="1899" height="64" key="GridCell.Tab.0.right" timestamp="1589446562737">
+    <state width="1899" height="64" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589539672786" />
+    <state width="1899" height="64" key="GridCell.Tab.0.right" timestamp="1589539672786">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="778" height="208" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1584083350355" />
-    <state width="1899" height="64" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589446562737" />
+    <state width="1899" height="64" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589539672786" />
     <state x="2381" y="164" key="SettingsEditor" timestamp="1589396798418">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588146037939" />
     <state x="2381" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589396798418" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1589536747049">
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1589537006132">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="392" y="158" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584097007025" />
     <state x="470" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589396298866" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589536747049" />
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589537006132" />
     <state x="2012" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589379101531">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -586,12 +588,20 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="953" y="0" width="974" height="1047" key="dock-window-2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589533290536" />
-    <state x="2503" y="177" width="753" height="687" key="find.popup" timestamp="1589473294537">
+    <state x="-7" y="0" width="974" height="1047" key="dock-window-3" timestamp="1589537659508">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-7" y="0" width="974" height="1047" key="dock-window-3/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589537659508" />
+    <state x="1948" y="-8" width="1509" height="908" maximized="true" key="dock-window-4" timestamp="1589539886801">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1948" y="-8" width="1509" height="908" maximized="true" key="dock-window-4/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589539886801" />
+    <state x="2503" y="177" width="753" height="687" key="find.popup" timestamp="1589539928780">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="486" y="146" width="627" height="568" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1584093344682" />
     <state x="583" y="177" width="753" height="687" key="find.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589395892061" />
-    <state x="2503" y="177" width="753" height="687" key="find.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589473294537" />
+    <state x="2503" y="177" width="753" height="687" key="find.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589539928780" />
     <state x="2536" y="250" key="run.anything.popup" timestamp="1589286649457">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

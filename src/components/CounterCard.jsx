@@ -49,27 +49,29 @@ const CounterCard = ({index, selectedCharacter, currentCounterCharacter}) => {
                 <img src={currentCounterCharacter.avatar} alt=""/>
             </div>
             <div className={"profile " + (index % 2 === 0 ? "pair" : "impair")}>
-                <div className={"role"}>
-                    <div className={"text"}>
-                        <p>ROLE</p>
-                        <p>
-                            <span>
-                                {currentCounterCharacter.type}
-                            </span>
-                        </p>
+                <div className={"role-and-score"}>
+                    <div className={"role"}>
+                        <div className={"text"}>
+                            <p>ROLE</p>
+                            <p>
+                                <span>
+                                    {currentCounterCharacter.type}
+                                </span>
+                            </p>
+                        </div>
+                        <img src={getTypeImage()} alt={currentCounterCharacter.type}/>
                     </div>
-                    <img src={getTypeImage()} alt={currentCounterCharacter.type}/>
-                </div>
-                <div className={"counter-score"}>
-                    <img src={counterArrow} className={"up-arrow"} alt="UP"
-                         onClick={() => {
-                             updateCharacterScore(currentCounterCharacter.score + 1);
-                         }}/>
-                    <span>{(currentCounterCharacter.score > 0 ? "+" : "") + currentCounterCharacter.score}</span>
-                    <img src={counterArrow} className={"down-arrow"} alt="DOWN"
-                         onClick={() => {
-                             updateCharacterScore(currentCounterCharacter.score - 1);
-                         }}/>
+                    <div className={"counter-score"}>
+                        <img src={counterArrow} className={"up-arrow"} alt="UP"
+                             onClick={() => {
+                                 updateCharacterScore(currentCounterCharacter.score + 1);
+                             }}/>
+                        <span>{(currentCounterCharacter.score > 0 ? "+" : "") + currentCounterCharacter.score}</span>
+                        <img src={counterArrow} className={"down-arrow"} alt="DOWN"
+                             onClick={() => {
+                                 updateCharacterScore(currentCounterCharacter.score - 1);
+                             }}/>
+                    </div>
                 </div>
                 <div className={"name"}>
                     {currentCounterCharacter.name}
