@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import "./CounterCard.css"
 import typeDamageImage from "../images/damage.svg";
 import typeSupportImage from "../images/support.svg";
@@ -11,14 +11,15 @@ import 'firebase/firestore';
 const CounterCard = ({index, selectedCharacter, currentCounterCharacter}) => {
 
     const db = firebase.firestore();
+    const [score, setScore] = useState(0);
 
-    const updateCharacterScore = async (score) => {
+    const updateCharacterScore = async (scoreIncrement) => {
         await db.collection("counters")
             .doc(`${selectedCharacter.name}VS${currentCounterCharacter.name}CounterScore`)
             .set({
                 rightCharacter: currentCounterCharacter.name,
                 leftCharacter: selectedCharacter.name,
-                score: score
+                score: score + scoreIncrement
             }, {merge: true});
 
         await db.collection("counters")
@@ -26,7 +27,7 @@ const CounterCard = ({index, selectedCharacter, currentCounterCharacter}) => {
             .set({
                 rightCharacter: selectedCharacter.name,
                 leftCharacter: currentCounterCharacter.name,
-                score: -score
+                score: score + scoreIncrement
             }, {merge: true});
     };
 
@@ -42,6 +43,16 @@ const CounterCard = ({index, selectedCharacter, currentCounterCharacter}) => {
                 return ""
         }
     };
+
+    useEffect(() => {
+        if (selectedCharacter) {
+            // console.log("before ", currentCounterCharacter.name, currentCounterCharacter.score);
+            setScore(currentCounterCharacter.score);
+            // console.log("after ", currentCounterCharacter.name, score);
+
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [currentCounterCharacter])
 
     return (
         <div className={"counter-card"}>
@@ -64,12 +75,14 @@ const CounterCard = ({index, selectedCharacter, currentCounterCharacter}) => {
                     <div className={"counter-score"}>
                         <img src={counterArrow} className={"up-arrow"} alt="UP"
                              onClick={() => {
-                                 updateCharacterScore(currentCounterCharacter.score + 1);
+                                 updateCharacterScore(1);
+                                 setScore(score + 1);
                              }}/>
-                        <span>{(currentCounterCharacter.score > 0 ? "+" : "") + currentCounterCharacter.score}</span>
+                        <span>{(score > 0 ? "+" : "") + score}</span>
                         <img src={counterArrow} className={"down-arrow"} alt="DOWN"
                              onClick={() => {
-                                 updateCharacterScore(currentCounterCharacter.score - 1);
+                                 updateCharacterScore(-1);
+                                 setScore(score - 1);
                              }}/>
                     </div>
                 </div>

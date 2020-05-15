@@ -74,7 +74,7 @@ const CounterFilter = ({characters}) => {
         isMountedRef.current = true;
 
         if (!initialized.current && selectedCharacter) {
-            listenForScores();
+            // listenForScores();
             sortOrder.current = -1;
             getFilteredCharacter()
                 .then(result => {
@@ -119,7 +119,8 @@ const CounterFilter = ({characters}) => {
             sortOrder.current = -1;
             filterCharacters();
         }
-    }, [filterCharacters, selectedCharacter])
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [selectedCharacter])
 
     return (
         <div ref={counterContainerRef} className={"counter-container"}>
