@@ -8,7 +8,6 @@ import {animateScroll as scroll} from "react-scroll";
 import CharacterContext from "../CharacterContext";
 import CardList from "./CardList";
 import CounterFilter from "./CounterFilter";
-import SelectedCharacterCard from "./SelectedCharacterCard";
 
 const MainFilter = ({characters}) => {
 

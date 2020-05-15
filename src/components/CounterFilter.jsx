@@ -113,6 +113,14 @@ const CounterFilter = ({characters}) => {
         };
     }, []);
 
+    useEffect(() => {
+        if (selectedCharacter) {
+            isStrongAgainstSelected.current = true;
+            sortOrder.current = -1;
+            filterCharacters();
+        }
+    }, [filterCharacters, selectedCharacter])
+
     return (
         <div ref={counterContainerRef} className={"counter-container"}>
             {
