@@ -23,13 +23,6 @@
 .counter-filter > .strong-against {
 }
 
-.counter-filter > .strong-against div.selected > p,
-.counter-filter > .strong-against:hover > p,
-.counter-filter > .weak-against:hover > p {
-    font-size: 1.1rem;
-    margin: .9rem 0 .9rem 0;
-}
-
 .counter-filter > .strong-against.selected,
 .counter-filter > .weak-against.selected {
     background-color: #f99e1a !important;
@@ -44,10 +37,22 @@
     .counter-filter {
         min-height: 5vh;
     }
+    .counter-filter > .strong-against div.selected > p,
+    .counter-filter > .strong-against:hover > p,
+    .counter-filter > .weak-against:hover > p {
+        font-size: 1.1rem;
+        margin: .9rem -.3rem .9rem -.4rem;
+    }
 }
 
 @media screen and (max-width: 800px) {
     .counter-filter {
         min-height: 6vh;
+    }
+    .counter-filter > .strong-against div.selected > p,
+    .counter-filter > .strong-against:hover > p,
+    .counter-filter > .weak-against:hover > p {
+        font-size: 1.1rem;
+        margin: .9rem 0 .9rem 0;
     }
 }
