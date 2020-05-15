@@ -32,16 +32,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="[Desktop] hide counter container when there is no selection">
+    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="[Desktop] adjust footer when character is selected">
       <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/images/black-counter-arrow.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CounterFilter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterFilter.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DiscoverMore.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DiscoverMore.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DiscoverMore.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DiscoverMore.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SelectedCharacterCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SelectedCharacterCard.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,14 +126,7 @@
       <workItem from="1589275656737" duration="16581000" />
       <workItem from="1589353357408" duration="72814000" />
       <workItem from="1589526267303" duration="3096000" />
-      <workItem from="1589531010306" duration="16768000" />
-    </task>
-    <task id="LOCAL-00024" summary="fix list cover filter menu while loading">
-      <created>1588269250388</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1588269250388</updated>
+      <workItem from="1589531010306" duration="17699000" />
     </task>
     <task id="LOCAL-00025" summary="remove useless placeholder">
       <created>1588269941498</created>
@@ -476,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589547307374</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="[Desktop] adjust footer when character is selected">
+      <created>1589547809787</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1589547809787</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,7 +490,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix counter card update" />
     <MESSAGE value="fix wrong list order after update when weak against is selected" />
     <MESSAGE value="remove useless props" />
     <MESSAGE value="change main filter beavhior to make it work on desktop version" />
@@ -520,7 +514,8 @@
     <MESSAGE value="[Desktop] ✔ pointer cursor on counter buttons" />
     <MESSAGE value="[Desktop] fix score update" />
     <MESSAGE value="[Desktop] hide counter container when there is no selection" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Desktop] hide counter container when there is no selection" />
+    <MESSAGE value="[Desktop] adjust footer when character is selected" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Desktop] adjust footer when character is selected" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2744" y="418" key="#ESLint" timestamp="1589381004186">
@@ -569,12 +564,12 @@
     </state>
     <state x="461" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588146037939" />
     <state x="2381" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589396798418" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1589547308545">
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1589547811052">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="392" y="158" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584097007025" />
     <state x="470" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589396298866" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589547308545" />
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589547811052" />
     <state x="2012" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589379101531">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -599,20 +594,20 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="1948" y="-8" width="1509" height="908" maximized="true" key="dock-window-4/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589539886801" />
-    <state x="2503" y="177" width="874" height="687" key="find.popup" timestamp="1589547612448">
+    <state x="2503" y="177" width="874" height="687" key="find.popup" timestamp="1589548458224">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="486" y="146" width="627" height="568" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1584093344682" />
     <state x="583" y="177" width="753" height="687" key="find.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589395892061" />
-    <state x="2503" y="177" width="874" height="687" key="find.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589547612448" />
+    <state x="2503" y="177" width="874" height="687" key="find.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589548458224" />
     <state x="2536" y="250" key="run.anything.popup" timestamp="1589286649457">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2536" y="250" key="run.anything.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589286649457" />
-    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1589547702768">
+    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1589548526417">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589391501115" />
-    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589547702768" />
+    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589548526417" />
   </component>
 </project>

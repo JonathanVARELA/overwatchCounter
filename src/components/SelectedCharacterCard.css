@@ -29,7 +29,6 @@
 
 .selected-character-card > .profile > .role > .text {
     align-self: center;
-    flex-grow: 1;
 }
 
 .selected-character-card > .profile > .role > .text > p {
@@ -69,12 +68,13 @@
     }
 
     .selected-character-card > .profile > .role > img {
-        max-width: 20%;
-        margin-right: 10%;
+        max-width: 15%;
     }
 
     .selected-character-card > .profile > .role > .text {
         margin-left: 8%;
+        max-width: 50%;
+        min-width: 33%;
     }
 
     .selected-character-card > .profile > .role > .text > p {
@@ -115,6 +115,7 @@
     }
 
     .selected-character-card > .profile > .role > .text {
+        flex-grow: 1;
         margin-left: 10%;
     }
 
