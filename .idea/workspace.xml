@@ -32,11 +32,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="[Desktop] add shadows">
+    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="[mobile] fix filter z-index">
       <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/images/black-counter-arrow.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MainFilter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainFilter.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MainFilter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainFilter.jsx" afterDir="false" />
     </list>
@@ -128,14 +127,7 @@
       <workItem from="1589275656737" duration="16581000" />
       <workItem from="1589353357408" duration="72814000" />
       <workItem from="1589526267303" duration="3096000" />
-      <workItem from="1589531010306" duration="22179000" />
-    </task>
-    <task id="LOCAL-00027" summary="ok, now it's fixed ! (i hope 🤞)">
-      <created>1588276078240</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1588276078240</updated>
+      <workItem from="1589531010306" duration="25176000" />
     </task>
     <task id="LOCAL-00028" summary="transform svg to true vector images (make image x10 smaller)">
       <created>1589279696164</created>
@@ -473,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589551527619</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="[mobile] fix filter z-index">
+      <created>1589554014555</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1589554014555</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,7 +491,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="change main filter beavhior to make it work on desktop version" />
     <MESSAGE value="fix wrong counter value&#10;fix filter css" />
     <MESSAGE value="make counter button click area bigger" />
     <MESSAGE value="[Desktop] make home responsive" />
@@ -517,7 +515,8 @@
     <MESSAGE value="[Desktop] adjust footer when character is selected" />
     <MESSAGE value="[Desktop] adjust character selected card" />
     <MESSAGE value="[Desktop] add shadows" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Desktop] add shadows" />
+    <MESSAGE value="[mobile] fix filter z-index" />
+    <option name="LAST_COMMIT_MESSAGE" value="[mobile] fix filter z-index" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2744" y="418" key="#ESLint" timestamp="1589381004186">
@@ -566,12 +565,12 @@
     </state>
     <state x="461" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588146037939" />
     <state x="2381" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589396798418" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1589551528673">
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1589554015824">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="392" y="158" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584097007025" />
     <state x="470" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589396298866" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589551528673" />
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589554015824" />
     <state x="2012" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589379101531">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -596,12 +595,12 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="1948" y="-8" width="1509" height="908" maximized="true" key="dock-window-4/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589539886801" />
-    <state x="2503" y="177" width="874" height="687" key="find.popup" timestamp="1589553934219">
+    <state x="2503" y="177" width="874" height="687" key="find.popup" timestamp="1589555122627">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="486" y="146" width="627" height="568" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1584093344682" />
     <state x="583" y="177" width="753" height="687" key="find.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589395892061" />
-    <state x="2503" y="177" width="874" height="687" key="find.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589553934219" />
+    <state x="2503" y="177" width="874" height="687" key="find.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589555122627" />
     <state x="2536" y="250" key="run.anything.popup" timestamp="1589286649457">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
