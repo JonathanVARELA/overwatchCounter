@@ -32,12 +32,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="white discover more">
+    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="resize">
       <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/images/black-counter-arrow.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainFilter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainFilter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CounterCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterCard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SelectedCharacterCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SelectedCharacterCard.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,14 +127,7 @@
       <workItem from="1589275656737" duration="16581000" />
       <workItem from="1589353357408" duration="72814000" />
       <workItem from="1589526267303" duration="3096000" />
-      <workItem from="1589531010306" duration="4195000" />
-    </task>
-    <task id="LOCAL-00014" summary="almost it !">
-      <created>1588174642203</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1588174642203</updated>
+      <workItem from="1589531010306" duration="5698000" />
     </task>
     <task id="LOCAL-00015" summary="fix svg on chrome">
       <created>1588176602103</created>
@@ -472,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589534388807</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="resize">
+      <created>1589535402828</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1589535402828</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,7 +491,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix console warnings" />
     <MESSAGE value="remove useless dependencies" />
     <MESSAGE value="reduce firestore read operations" />
     <MESSAGE value="remove useless imports" />
@@ -516,7 +515,8 @@
     <MESSAGE value="fix card responsive" />
     <MESSAGE value="fix responsive" />
     <MESSAGE value="white discover more" />
-    <option name="LAST_COMMIT_MESSAGE" value="white discover more" />
+    <MESSAGE value="resize" />
+    <option name="LAST_COMMIT_MESSAGE" value="resize" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2744" y="418" key="#ESLint" timestamp="1589381004186">
@@ -565,12 +565,12 @@
     </state>
     <state x="461" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588146037939" />
     <state x="2381" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589396798418" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1589534390172">
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1589535404115">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="392" y="158" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584097007025" />
     <state x="470" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589396298866" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589534390172" />
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589535404115" />
     <state x="2012" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589379101531">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -579,10 +579,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2687" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1588149928042" />
-    <state x="2065" y="-19" width="1391" height="971" key="dock-window-1" timestamp="1589534747986">
+    <state x="2241" y="321" width="1391" height="971" key="dock-window-1" timestamp="1589535534730">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2065" y="-19" width="1391" height="971" key="dock-window-1/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589534747986" />
+    <state x="2241" y="321" width="1391" height="971" key="dock-window-1/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589535534730" />
     <state x="953" y="0" width="974" height="1047" key="dock-window-2" timestamp="1589533290536">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

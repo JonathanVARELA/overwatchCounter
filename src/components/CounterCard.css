@@ -103,7 +103,6 @@
     justify-content: stretch;
 }
 
-
 .counter-card > .profile > .counter-score img.up-arrow {
     filter: brightness(50%) sepia(100) saturate(100) hue-rotate(180deg);
     -webkit-filter: brightness(60%) sepia(100) saturate(80) hue-rotate(150deg);
@@ -117,4 +116,12 @@
     filter: brightness(50%) sepia(100) saturate(100) hue-rotate(0deg);
     -webkit-filter: brightness(50%) sepia(100) saturate(70) hue-rotate(0deg);
     padding: 0 16% 10% 16% !important;
+}
+
+@media screen and (min-width: 800px) {
+
+}
+
+@media screen and (max-width: 800px) {
+
 }
