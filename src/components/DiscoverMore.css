@@ -58,3 +58,7 @@
     margin: 3vh;
     max-height: 20vh;
 }
+
+.discover-more.character-selected {
+    max-width: 67.5% !important;
+}

@@ -17,13 +17,14 @@ function App() {
             <FirebaseConnectionProvider>
                 <CharacterContext.Provider value={[selectedCharacter, setSelectedCharacter]}>
                     <Header/>
-                        <CharacterListProvider>
-                            <MainFilter/>
-                        </CharacterListProvider>
+                    <CharacterListProvider>
+                        <MainFilter/>
+                    </CharacterListProvider>
+                    <DiscoverMore/>
+                    <Footer/>
                 </CharacterContext.Provider>
             </FirebaseConnectionProvider>
-            <DiscoverMore/>
-            <Footer/>
+
         </>
     );
 }

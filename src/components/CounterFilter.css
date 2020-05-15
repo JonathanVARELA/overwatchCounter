@@ -1,9 +1,9 @@
 .counter-container {
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 .counter-container.selected-character {
-    display: none !important;
+    display: flex !important;
 }
 
 .counter-filter {
