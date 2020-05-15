@@ -28,7 +28,7 @@
 .counter-card > .profile {
     display: flex;
     flex-direction: column;
-    max-width: 66%;
+    max-width: 67%;
     justify-self: stretch;
     align-self: stretch;
 }
