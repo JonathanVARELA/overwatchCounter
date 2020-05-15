@@ -123,7 +123,7 @@ const CounterFilter = ({characters}) => {
     }, [selectedCharacter])
 
     return (
-        <div ref={counterContainerRef} className={"counter-container"}>
+        <div ref={counterContainerRef} className={"counter-container" + (selectedCharacter ? " selected-character" : "")}>
             {
                 selectedCharacter
                     ?

@@ -2,6 +2,9 @@
     display: flex;
     flex-direction: column;
 }
+.counter-container.selected-character {
+    display: none !important;
+}
 
 .counter-filter {
     display: flex;
