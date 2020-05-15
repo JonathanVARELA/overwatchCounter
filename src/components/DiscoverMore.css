@@ -2,7 +2,7 @@
     padding-top: 5vh;
     display: flex;
     justify-content: center;
-    background-color: #c9c9c9;
+    background-color: white;
     flex-direction: column;
     flex-grow: 1;
     align-self: stretch;
@@ -16,10 +16,6 @@
 }
 
 @media screen and (min-width: 800px) {
-
-    .discover-more {
-        background-color: white !important;
-    }
 
     .discover-more > div {
         flex-direction: row;
@@ -41,6 +37,7 @@
     .discover-more > div {
         flex-direction: column;
     }
+
     .discover-more > div > img {
         max-width: 20vh;
         margin: 3vh;

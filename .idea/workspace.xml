@@ -32,11 +32,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="fix card responsive">
+    <list default="true" id="47cbcbeb-27c9-403f-a8b0-b5ba7897603d" name="Default Changelist" comment="fix responsive">
       <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/images/black-counter-arrow.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CounterCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CounterCard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DiscoverMore.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DiscoverMore.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,14 +127,7 @@
       <workItem from="1589275656737" duration="16581000" />
       <workItem from="1589353357408" duration="72814000" />
       <workItem from="1589526267303" duration="3096000" />
-      <workItem from="1589531010306" duration="2611000" />
-    </task>
-    <task id="LOCAL-00012" summary="better responsive">
-      <created>1588174010084</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1588174010084</updated>
+      <workItem from="1589531010306" duration="3359000" />
     </task>
     <task id="LOCAL-00013" summary="better responsive v2">
       <created>1588174414108</created>
@@ -471,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589533549836</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="fix responsive">
+      <created>1589533644770</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1589533644770</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,7 +491,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add missing files" />
     <MESSAGE value="(mobile only) add counter sorting" />
     <MESSAGE value="fix console warnings" />
     <MESSAGE value="remove useless dependencies" />
@@ -515,7 +515,8 @@
     <MESSAGE value="[Desktop] fix scroll (should be okay this time... maybe !)" />
     <MESSAGE value="add background gradient to classic cards" />
     <MESSAGE value="fix card responsive" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix card responsive" />
+    <MESSAGE value="fix responsive" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix responsive" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2744" y="418" key="#ESLint" timestamp="1589381004186">
@@ -564,12 +565,12 @@
     </state>
     <state x="461" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1588146037939" />
     <state x="2381" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589396798418" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1589533551482">
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2" timestamp="1589533646182">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="392" y="158" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1584097007025" />
     <state x="470" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1589396298866" />
-    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589533551482" />
+    <state x="2390" y="191" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1589533646182" />
     <state x="2012" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589379101531">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

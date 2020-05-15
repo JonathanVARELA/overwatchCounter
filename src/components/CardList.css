@@ -11,6 +11,10 @@
     #cardList.character-selected {
         display: none;
     }
+
+    #cardList {
+        padding-bottom: 10px;
+    }
 }
 
 @media screen and (min-width: 800px) {
